@@ -277,6 +277,25 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": ""
+                                },
+                                {
+                                    "key": "field_5b66194a8c946",
+                                    "label": "Schema Organization Name",
+                                    "name": "schema_organization_name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ],
                             "min": "",
@@ -347,5 +366,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1533417282
+    "modified": 1533417819
 }
