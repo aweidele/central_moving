@@ -23,3 +23,33 @@ function register_my_menu() {
   register_nav_menu( 'footer-menu', __( 'Footer Menu' ) );
 	register_nav_menu( 'footer-utility-menu', __( 'Footer Utility Menu' ) );
 }
+
+// Add Widget Areas
+function cm_widgets_init() {
+
+ register_sidebar( array(
+	 'name'          => 'Footer Column 1',
+	 'id'            => 'footer_column_1',
+	 'before_widget' => '<div class="block">',
+	 'after_widget'  => '</div>',
+	 'before_title'  => '',
+	 'after_title'   => '',
+ ) );
+
+ register_sidebar( array(
+	'name'          => 'Footer Column 2',
+	'id'            => 'footer_column_2',
+	'before_widget' => '<div class="block">',
+	'after_widget'  => '</div>',
+	'before_title'  => '',
+	'after_title'   => '',
+ ) );
+
+}
+add_action( 'widgets_init', 'cm_widgets_init' );
+
+// Add Options Page
+$args = [
+	'page_title' => 'Site Options'
+];
+acf_add_options_page($args);
