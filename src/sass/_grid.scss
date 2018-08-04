@@ -7,42 +7,18 @@ $max-width: 1140px;
 
 .row {
   max-width: $max-width;
-  display: flex;
-  margin: auto;
-  padding: 0 $gutter / 2;
-}
 
-[class^="col"] {
+  display: grid;
+  grid-template-columns: repeat($columns, [col-start] 1fr);
+  grid-column-gap: $gutter;
+
+  margin: auto;
   padding: 0 $gutter / 2;
 }
 
 @for $i from 1 through $columns {
   .col-#{$i} {
-    width: ($i / $columns) * 100%;
-  }
-}
-
-@media #{$minSM} {
-  @for $i from 1 through $columnsSM {
-    .col-sm-#{$i} {
-      width: ($i / $columnsSM) * 100%;
-    }
-  }
-}
-
-@media #{$minMD} {
-  @for $i from 1 through $columnsMD {
-    .col-md-#{$i} {
-      width: ($i / $columnsMD) * 100%;
-    }
-  }
-}
-
-@media #{$minLG} {
-  @for $i from 1 through $columns {
-    .col-lg-#{$i} {
-      width: ($i / $columns) * 100%;
-    }
+    grid-column: auto / span $i;
   }
 }
 
@@ -55,3 +31,6 @@ $max-width: 1140px;
       background: #CCC;
     }
 }
+
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout
