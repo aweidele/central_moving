@@ -8,17 +8,26 @@ $max-width: 1140px;
 .row {
   max-width: $max-width;
 
-  display: grid;
-  grid-template-columns: repeat($columns, [col-start] 1fr);
-  grid-column-gap: $gutter;
+  display: flex;
 
   margin: auto;
   padding: 0 $gutter / 2;
 }
 
+[class^="col"] {
+  flex-grow: 1;
+  padding: 0 $gutter / 2;
+}
+
 @for $i from 1 through $columns {
   .col-#{$i} {
-    grid-column: auto / span $i;
+    width: ($i / $columns) * 100%;
+  }
+}
+
+@for $i from 1 through $columns {
+  .push-#{$i} {
+    margin-left: ($i / $columns) * 100%;
   }
 }
 
