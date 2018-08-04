@@ -20,6 +20,12 @@
   }
 
   padding: 45px 0 64px;
+
+  @media #{$maxLG} {
+    .row > div {
+      padding-bottom: $gutter;
+    }
+  }
 }
 
 .footer_bottom {

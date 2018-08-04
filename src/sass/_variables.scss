@@ -12,7 +12,11 @@ $light: 300;
 $normal: 400;
 $bold: 700;
 
-// Media Queries
-$minSM: "screen and (min-width: 375px)";
-$minMD: "screen and (min-width: 768px)";
-$minLG: "screen and (min-width: 1024px)";
+// Media Queries\
+$minSM: "screen and (min-width: 426px)";
+$minMD: "screen and (min-width: 769px)";
+$minLG: "screen and (min-width: 1025px)";
+
+$maxSM: "screen and (max-width: 425px)";
+$maxMD: "screen and (max-width: 768px)";
+$maxLG: "screen and (max-width: 1024px)";
