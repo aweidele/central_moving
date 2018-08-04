@@ -1,0 +1,33 @@
+.footer {
+  background: $red;
+  color: $white;
+}
+
+.footer_bottom {
+  background: $red_dk;
+  font-size: 14px;
+  padding: 21px 0;
+}
+
+.footer_utility_nav {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+
+    + li:before {
+      content: "|";
+    }
+  }
+
+  a {
+    color: $white;
+    padding: 0 2px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  transition: all $speed;
+}
+
 .page_wrapper {
   min-height: 100vh;
   display: flex;
