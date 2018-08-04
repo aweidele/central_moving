@@ -14,3 +14,7 @@
 <?php wp_head();?>
 </head>
 <body>
+  <div class="page_wrapper">
+    <header>
+      Header
+    </header>

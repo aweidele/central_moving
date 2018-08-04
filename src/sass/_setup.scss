@@ -5,3 +5,13 @@
   border: 0;
   box-sizing: border-box;
 }
+
+.page_wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  > main {
+    flex-grow: 1;
+  }
+}

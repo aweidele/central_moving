@@ -1,8 +1,5 @@
 <?php get_header(); ?>
-
-<div class="row">
-  <div class="col-4">Column</div>
-  <div class="col-4">Column</div>
-  <div class="col-3">Column</div>
-</div>
+    <main>
+    This is the main
+    </main>
 <?php get_footer(); ?>
