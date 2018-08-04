@@ -1,5 +1,7 @@
 /* GRID */
 $columns: 11;
+$columnsMD: 4;
+$columnsSM: 2;
 $gutter: 20px;
 $max-width: 1140px;
 
@@ -7,14 +9,49 @@ $max-width: 1140px;
   max-width: $max-width;
   display: flex;
   margin: auto;
+  padding: 0 $gutter / 2;
 }
 
-.col {
-  padding: 0 $gutter;
+[class^="col"] {
+  padding: 0 $gutter / 2;
 }
 
 @for $i from 1 through $columns {
   .col-#{$i} {
-    width: ($i / $columns) * 1%;
+    width: ($i / $columns) * 100%;
   }
+}
+
+@media #{$minSM} {
+  @for $i from 1 through $columnsSM {
+    .col-sm-#{$i} {
+      width: ($i / $columnsSM) * 100%;
+    }
+  }
+}
+
+@media #{$minMD} {
+  @for $i from 1 through $columnsMD {
+    .col-md-#{$i} {
+      width: ($i / $columnsMD) * 100%;
+    }
+  }
+}
+
+@media #{$minLG} {
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      width: ($i / $columns) * 100%;
+    }
+  }
+}
+
+.row {
+  div:first-child {
+    background: #999;
+  }
+
+    div:last-child {
+      background: #CCC;
+    }
 }
