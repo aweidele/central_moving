@@ -19,6 +19,7 @@ var autoprefixerOptions = {
 };
 
 var jsQueue = [
+  'node_modules/owl.carousel/dist/owl.carousel.js',
   'src/js/*.js'
 ];
 

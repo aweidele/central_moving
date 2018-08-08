@@ -5,6 +5,9 @@
 @import "type";
 @import "footer";
 
-
 // Blocks
 @import "block_contact";
+
+// Dependencies
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+@import "../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
