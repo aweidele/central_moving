@@ -1,13 +1,21 @@
+
 .header {
+  width: 100%;
+  height: $headerHeight;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
   background: $red;
 }
 
 .header_logo {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1em;
 
   a {
-    height: 70px;
+    height: $headerHeight;
 
     display: flex;
     align-items: center;
@@ -20,20 +28,26 @@
   }
 
   svg {
-    width: 36px;
-    height: 42px;
-    margin-right: 14px;
+    width: 26px;
+    height: 31px;
+    margin-right: 7px;
   }
 
-  span {
+  @media #{$minMD} {
+    font-size: 24px;
 
+    svg {
+      width: 36px;
+      height: 42px;
+      margin-right: 14px;
+    }
   }
 }
 
 
 .header_nav_button {
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: $headerHeight;
 
   position: relative;
 
@@ -46,7 +60,7 @@
   span,
   &:before,
   &:after {
-    width: 30px;
+    width: 25px;
     height: 2px;
 
     position: absolute;
@@ -67,6 +81,35 @@
   }
 
   .menu_open & {
+    span {
+      opacity: 0;
+    }
 
+    &:before {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    &:after {
+      transform: translateY(0) rotate(-45deg);
+    }
   }
+
+  @media #{$minMD} {
+    width: $headerHeight;
+
+    span,
+    &:before,
+    &:after {
+      width: 30px;
+    }
+  }
+}
+
+
+.header_nav_menu {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
