@@ -2,8 +2,8 @@
     <main>
 
       <div class="row">
-        <div class="col push-2">Column</div>
-        <div class="col-3">Column</div>
+        <div class="col push_2">Column</div>
+        <div class="col_3">Column</div>
       </div>
 
     </main>
