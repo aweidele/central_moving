@@ -22,9 +22,14 @@
           <h1 class="header_logo">
             <a href="<?php echo get_home_url(); ?>">
               <svg viewBox="0 0 121.72 144"><use href="#site_logo"></use></svg>
+              <span class="header_logo_title">Central Moving & Storage</span>
             </a>
           </h1>
         </div>
-        <div class="col">Nav</div>
+        <div class="col">
+          <div class="header_nav_wrapper">
+            <button class="header_nav_button" id="header_nav_button"><span>Menu</span></button>
+          </div>
+        </div>
       </div>
     </header>
