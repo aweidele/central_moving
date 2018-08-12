@@ -67,9 +67,21 @@
   left: 0;
 
   //transform: translateY(-100%);
-  transition: all $speed;
+  transition: all $speed * 2;
 
   .menu_open & {
     transform: translateY(0);
+  }
+}
+
+
+.main_nav_wrapper {
+  background: $red;
+  color: $white;
+
+  h2 {
+    height: $headerHeight;
+    font-size: 24px;
+    padding: 20px 0;
   }
 }
