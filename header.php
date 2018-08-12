@@ -30,7 +30,11 @@
           <div class="header_nav_wrapper">
             <button class="header_nav_button" id="header_nav_button"><span>Menu</span></button>
             <div class="header_nav_menu">
-              Hello.
+              <div class="row">
+                <div class="col_lg_7 push_lg_4">
+                  Hi!
+                </div>
+              </div>
             </div>
           </div>
         </div>

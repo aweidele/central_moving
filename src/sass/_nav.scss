@@ -1,0 +1,75 @@
+.header_nav_button {
+  width: 30px;
+  height: $headerHeight;
+
+  position: relative;
+
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: -999999px;
+  z-index: 10;
+
+  span,
+  &:before,
+  &:after {
+    width: 25px;
+    height: 2px;
+
+    position: absolute;
+    top: 34px;
+    right: 0;
+
+    content: "";
+    background: $white;
+    transition: all $speed;
+  }
+
+  &:before {
+    transform: translateY(-9px);
+  }
+
+  &:after {
+    transform: translateY(9px);
+  }
+
+  .menu_open & {
+    span {
+      opacity: 0;
+    }
+
+    &:before {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    &:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+
+  @media #{$minMD} {
+    width: $headerHeight;
+
+    span,
+    &:before,
+    &:after {
+      width: 30px;
+    }
+  }
+}
+
+
+.header_nav_menu {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  //transform: translateY(-100%);
+  transition: all $speed;
+
+  .menu_open & {
+    transform: translateY(0);
+  }
+}

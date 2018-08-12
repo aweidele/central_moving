@@ -44,13 +44,13 @@ $max-width: 1400px;
 /* Phone */
 @media #{$maxSM} {
   @for $i from 1 through $columnsSM {
-    .col_sm-#{$i} {
+    .col_sm_#{$i} {
       width: ($i / $columnsSM) * 100%;
     }
   }
 
   @for $i from 0 through $columnsSM - 1 {
-    .push_sm-#{$i} {
+    .push_sm_#{$i} {
       margin-left: ($i / $columnsSM) * 100%;
     }
   }
@@ -59,13 +59,13 @@ $max-width: 1400px;
 /* Tablet */
 @media #{$minSM} {
   @for $i from 1 through $columnsMD {
-    .col_md-#{$i} {
+    .col_md_#{$i} {
       width: ($i / $columnsMD) * 100%;
     }
   }
 
   @for $i from 0 through $columnsMD - 1 {
-    .push_md-#{$i} {
+    .push_md_#{$i} {
       margin-left: ($i / $columnsMD) * 100%;
     }
   }
@@ -74,13 +74,13 @@ $max-width: 1400px;
 /* Desktop */
 @media #{$minMD} {
   @for $i from 1 through $columns {
-    .col_lg-#{$i} {
+    .col_lg_#{$i} {
       width: ($i / $columns) * 100%;
     }
   }
 
   @for $i from 0 through $columns - 1 {
-    .push_lg-#{$i} {
+    .push_lg_#{$i} {
       margin-left: ($i / $columns) * 100%;
     }
   }
