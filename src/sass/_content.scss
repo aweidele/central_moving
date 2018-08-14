@@ -1,0 +1,7 @@
+.main {
+  padding-top: $headerHeight;
+
+  .hero_wrapper + & {
+    padding-top: 0;
+  }
+}

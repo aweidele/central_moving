@@ -96,3 +96,11 @@ $args = [
 	'page_title' => 'Site Options'
 ];
 acf_add_options_page($args);
+
+
+// Blocks
+function cm_blocks($blocks) {
+  foreach($blocks as $block) {
+    include("blocks/block_".$block["acf_fc_layout"].".php");
+  }
+}

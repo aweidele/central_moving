@@ -6,8 +6,8 @@
   include("blocks/block_hero.php");
 ?>
 
-<main style="width: 100%; overflow: hidden;">
-
+<main class="main">
+<?php cm_blocks($fields["blocks"]); ?>
 <pre><?php print_r($fields); ?></pre>
 </main>
 <?php get_footer(); ?>
