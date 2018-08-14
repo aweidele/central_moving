@@ -15,6 +15,10 @@ function enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
+// Image Sizes
+add_image_size( 'hero-image', 1440, 537, true );
+add_image_size( 'hero-image-sm', 1080, 403, true );
+
 
 // Register Menu
 add_action( 'init', 'register_my_menu' );

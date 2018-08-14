@@ -6,3 +6,9 @@
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+@mixin img_block {
+  width: 100%;
+  height: auto;
+  display: block;
+}
