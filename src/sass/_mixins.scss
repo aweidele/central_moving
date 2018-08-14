@@ -14,27 +14,30 @@
 }
 
 // Buttons
-@mixin btn_base {
+@mixin btn_base($p: 1) {
   @include fw_light;
   @include letterspace(1);
+  border: 2px solid $red;
   display: inline-block;
   font-size: 18px;
-  padding: 14px $gutter;
+  padding: 14px $gutter * $p;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3;
-}
-
-@mixin btn {
-  
-}
-
-@mixin btn_reverse {
-  @include btn_base;
-  background: rgba($red,0.9);
-  color: $white;
 
   &:hover {
     background: rgba($red,0.6);
+    color: $white;
   }
+}
+
+@mixin btn($p: 1)  {
+  @include btn_base($p);
+  color: $red;
+}
+
+@mixin btn_reverse($p: 1) {
+  @include btn_base($p);
+  background: rgba($red,0.9);
+  color: $white;
 }

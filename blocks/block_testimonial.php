@@ -1,7 +1,11 @@
   <section class="testimonial">
+    <header class="row">
+      <div class="col push_xl_1">
+        <h2><?=$block["testimonial_heading"]?></h2>
+      </div>
+    </header>
     <div class="row">
       <div class="col_sm_2 col_md_2 col_lg_7 push_xl_1">
-        <h2><?=$block["testimonial_heading"]?></h2>
         <blockquote>
           <?=nl2br($block["testimonial"])?>
         </blockquote>
@@ -12,5 +16,3 @@
       </div>
     </div>
   </section>
-
-<pre><?php print_r($block); ?></pre>
