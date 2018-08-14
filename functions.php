@@ -28,6 +28,7 @@ function register_my_menu() {
 	register_nav_menu( 'footer-utility-menu', __( 'Footer Utility Menu' ) );
 }
 
+/* https://core.trac.wordpress.org/browser/tags/4.9.8/src//wp-includes/class-walker-nav-menu.php#L0 */
 class CR_Walker extends Walker_Nav_Menu {
 
   // Displays start of an element. E.g '<li> Item Name'
