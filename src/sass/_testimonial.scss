@@ -1,0 +1,19 @@
+.testimonial {
+  background: $gray_0;
+
+  h2 {
+    @include h2;
+  }
+
+  blockquote {
+    @include quote;
+  }
+
+  cite {
+    @include cite;
+  }
+
+  .testimonial_cta {
+    @include btn;
+  }
+}

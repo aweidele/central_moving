@@ -4,3 +4,45 @@ input,
 button {
   font-family: 'Lato', sans-serif;
 }
+
+// Type
+@mixin fw_light {
+  font-weight: 300;
+}
+
+@mixin fw_reg {
+  font-weight: 400;
+}
+
+@mixin fw_bold {
+  font-weight: 700;
+}
+
+@mixin letterspace($track: 0) {
+  letter-spacing: ($track / 1000) * 1em;
+}
+
+@mixin h2 {
+  @include fw_light;
+  font-size: 30px;
+  line-height: 1.2em;
+  margin-bottom: (24 / 30) * 1em;
+}
+
+@mixin quote {
+  @include fw_light;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: (10 / 24) * 1em;
+}
+
+@mixin cite {
+  @include quote;
+  display: block;
+  font-style: normal;
+
+  &:before {
+    content: "—";
+    display: inline-block;
+  }
+}

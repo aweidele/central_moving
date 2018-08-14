@@ -8,6 +8,5 @@
 
 <main class="main">
 <?php cm_blocks($fields["blocks"]); ?>
-<pre><?php print_r($fields); ?></pre>
 </main>
 <?php get_footer(); ?>

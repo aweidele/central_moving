@@ -62,8 +62,8 @@
                         },
                         {
                             "key": "field_5b72d74ebb409",
-                            "label": "Attributiion",
-                            "name": "attributiion",
+                            "label": "Attribution",
+                            "name": "attribution",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -121,5 +121,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534252946
+    "modified": 1534279741
 }
