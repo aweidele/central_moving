@@ -71,7 +71,7 @@ $max-width: 1400px;
   }
 }
 
-/* Desktop */
+/* Laptop */
 @media #{$minMD} {
   @for $i from 1 through $columns {
     .col_lg_#{$i} {
@@ -81,6 +81,21 @@ $max-width: 1400px;
 
   @for $i from 0 through $columns - 1 {
     .push_lg_#{$i} {
+      margin-left: ($i / $columns) * 100%;
+    }
+  }
+}
+
+/* Desktop */
+@media #{$minLG} {
+  @for $i from 1 through $columns {
+    .col_xl_#{$i} {
+      width: ($i / $columns) * 100%;
+    }
+  }
+
+  @for $i from 0 through $columns - 1 {
+    .push_xl_#{$i} {
       margin-left: ($i / $columns) * 100%;
     }
   }

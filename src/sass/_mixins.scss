@@ -12,3 +12,43 @@
   height: auto;
   display: block;
 }
+
+// Type
+@mixin fw_light {
+  font-weight: 300;
+}
+
+@mixin fw_reg {
+  font-weight: 400;
+}
+
+@mixin fw_bold {
+  font-weight: 700;
+}
+
+@mixin letterspace($track: 0) {
+  letter-spacing: ($track / 1000) * 1em;
+}
+
+
+// Buttons
+@mixin btn_base {
+  @include fw_light;
+  @include letterspace(1);
+  display: inline-block;
+  font-size: 18px;
+  padding: 14px $gutter;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3;
+}
+
+@mixin btn_reverse {
+  @include btn_base;
+  background: rgba($red,0.9);
+  color: $white;
+
+  &:hover {
+    background: rgba($red,0.6);
+  }
+}
