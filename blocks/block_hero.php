@@ -1,5 +1,5 @@
 <div class="hero_wrapper">
-  <div class="hero owl-carousel" data-options='{"items":1}'>
+  <div class="hero owl-carousel" data-options='{"items":1,"dots":false,"loop":true,"autoplay":true,"autoplayTimeout":<?=$heroSpeed?>}'>
     <?php
       foreach($hero as $slide) {
     ?>

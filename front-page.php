@@ -2,6 +2,7 @@
   get_header();
   $fields = get_fields();
   $hero = $fields["homepage_hero"];
+  $heroSpeed = $fields["homepage_hero_speed"];
   include("blocks/block_hero.php");
 ?>
 
