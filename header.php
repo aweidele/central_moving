@@ -41,7 +41,7 @@
                         wp_nav_menu(
                           array(
                             'theme_location' => 'primary-menu',
-                            'walker' => new CR_Walker()
+                            'walker' => new CM_Walker()
                           )
                         ); ?>
                     </nav>
