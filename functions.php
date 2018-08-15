@@ -67,29 +67,8 @@ class CR_Walker extends Walker_Nav_Menu {
   }
 }
 
-// Add Widget Areas
-function cm_widgets_init() {
-
- register_sidebar( array(
-	 'name'          => 'Footer Column 1',
-	 'id'            => 'footer_column_1',
-	 'before_widget' => '<div class="block">',
-	 'after_widget'  => '</div>',
-	 'before_title'  => '',
-	 'after_title'   => '',
- ) );
-
- register_sidebar( array(
-	'name'          => 'Footer Column 2',
-	'id'            => 'footer_column_2',
-	'before_widget' => '<div class="block">',
-	'after_widget'  => '</div>',
-	'before_title'  => '',
-	'after_title'   => '',
- ) );
-
-}
-add_action( 'widgets_init', 'cm_widgets_init' );
+// Post Types
+require_once("post-types/post-types.php");
 
 // Add Options Page
 $args = [
@@ -104,3 +83,27 @@ function cm_blocks($blocks) {
     include("blocks/block_".$block["acf_fc_layout"].".php");
   }
 }
+
+// Add Widget Areas
+// function cm_widgets_init() {
+//
+//  register_sidebar( array(
+// 	 'name'          => 'Footer Column 1',
+// 	 'id'            => 'footer_column_1',
+// 	 'before_widget' => '<div class="block">',
+// 	 'after_widget'  => '</div>',
+// 	 'before_title'  => '',
+// 	 'after_title'   => '',
+//  ) );
+//
+//  register_sidebar( array(
+// 	'name'          => 'Footer Column 2',
+// 	'id'            => 'footer_column_2',
+// 	'before_widget' => '<div class="block">',
+// 	'after_widget'  => '</div>',
+// 	'before_title'  => '',
+// 	'after_title'   => '',
+//  ) );
+//
+// }
+// add_action( 'widgets_init', 'cm_widgets_init' );
