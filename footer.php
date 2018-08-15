@@ -6,12 +6,12 @@
         <div class="row">
           <div class="col_sm-2 col_md_2 col_lg_3 push_lg_1">
             <?php foreach($footer["footer_column_1"] as $block) {
-              include("blocks/block_".$block["acf_fc_layout"].".php");
+              include("blocks/block-".$block["acf_fc_layout"].".php");
             } ?>
           </div>
           <div class="col_sm-2 col_md_2 col_lg_3 ">
             <?php foreach($footer["footer_column_2_footer_column_1"] as $block) {
-              include("blocks/block_".$block["acf_fc_layout"].".php");
+              include("blocks/block-".$block["acf_fc_layout"].".php");
             } ?>
           </div>
           <div class="col_sm-2 col_md_4 col_lg_4">
