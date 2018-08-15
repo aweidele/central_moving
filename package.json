@@ -1,5 +1,5 @@
 {
-  "name": "Central Moving",
+  "name": "central_moving",
   "version": "1.0.0",
   "description": "2018 Website for Central Moving",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aweidele/rethink"
+    "url": "git+https://github.com/aweidele/central_moving"
   },
   "author": "Aaron Weidele",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aweidele/rethink/issues"
+    "url": "https://github.com/aweidele/central_movingk/issues"
   },
-  "homepage": "https://github.com/aweidele/rethink#readme",
+  "homepage": "https://github.com/aweidele/central_moving#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
