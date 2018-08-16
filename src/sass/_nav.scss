@@ -85,3 +85,30 @@
     padding: 20px 0;
   }
 }
+
+.main_nav {
+
+}
+
+.main_nav_expand {
+  display: none;
+  float: right;
+}
+
+@media #{$maxSM} {
+  .main_nav {
+    .sub-menu {
+      display: none;
+    }
+
+    .expanded {
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+
+  .main_nav_expand {
+    display: block;
+  }
+}
