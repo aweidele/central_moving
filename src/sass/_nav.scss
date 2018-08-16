@@ -98,6 +98,10 @@
   a {
     color: $white;
   }
+
+  .menu-item {
+    @include clearfix;
+  }
 }
 
 .main_nav_expand {

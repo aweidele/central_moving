@@ -7,6 +7,16 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+@mixin clearfix {
+  &:after {
+    height: 0;
+
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
 @mixin img_block {
   width: 100%;
   height: auto;
