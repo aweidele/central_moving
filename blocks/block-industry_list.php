@@ -4,4 +4,25 @@
       'hide_empty' => false,
   ]);
  ?>
- <pre><?php print_r($terms); ?></pre>
+ <section class="industry_list">
+   <header>
+     <div class="row align_center">
+       <div class="col_md_4 col_lg_3 push_xl_1">
+         <h2 class="industry_list_heading"><?=$block["heading"]?></h2>
+       </div>
+       <div class="col_md_4 col_lg_7">
+         <p class="industry_list_statement"><?=$block["statement"]?></p>
+       </div>
+     </div>
+   </header>
+   <div class="row">
+     <div class="col_md_4 col_lg_9 push_xl_1">
+       <ul class="industry_terms">
+         <?php foreach($terms as $term) { ?>
+          <li><a href=""><?=$term->name?></a></li>
+          <?php } ?>
+          <li><a href="">View All</a></li>
+       </ul>
+     </div>
+   </div>
+ </section>

@@ -7,12 +7,13 @@
 @import "header";
 @import "nav";
 @import "content";
-@import "testimonial";
 @import "footer";
 
 // Blocks
 @import "block_contact";
 @import "block_hero";
+@import "block_testimonial";
+@import "block_industry_list";
 
 // Dependencies
 @import "../../node_modules/owl.carousel/src/scss/owl.carousel.scss";
