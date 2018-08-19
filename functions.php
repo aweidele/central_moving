@@ -30,7 +30,7 @@ add_image_size( 'grid-image-368', 368, 999999, false );
 add_image_size( 'grid-image-443', 443, 999999, false );
 add_image_size( 'grid-image-500', 500, 999999, false );
 add_image_size( 'grid-image-546', 546, 999999, false );
-
+add_image_size( 'grid-image-700', 700, 999999, false );
 
 // Register Menu
 add_action( 'init', 'register_my_menu' );

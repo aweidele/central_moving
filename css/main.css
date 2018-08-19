@@ -854,8 +854,11 @@ button {
 }
 
 .callout_grid {
-  position: relative;
   margin: 45px 0;
+}
+
+.callout_grid_wrapper {
+  position: relative;
 }
 
 .callout_grid_header, .callout_grid_header h2 {
