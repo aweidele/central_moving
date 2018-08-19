@@ -34,20 +34,26 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3;
-
-  &:hover {
-    background: rgba($red,0.6);
-    color: $white;
-  }
 }
 
 @mixin btn($p: 1)  {
   @include btn_base($p);
   color: $red;
+
+  &:hover {
+    background: $red;
+    color: $white;
+  }
 }
 
 @mixin btn_reverse($p: 1) {
   @include btn_base($p);
   background: rgba($red,0.9);
   color: $white;
+
+  &:hover {
+    background: $white;
+    border: 2px solid $white;
+    color: $red;
+  }
 }

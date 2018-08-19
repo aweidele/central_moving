@@ -25,6 +25,11 @@
 .callout_grid_cta {
   a {
     @include btn;
+    &:after {
+      content: ">";
+      display: inline-block;
+      padding-left: 5px;
+    }
   }
 }
 
