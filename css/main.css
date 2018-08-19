@@ -852,6 +852,93 @@ button {
   padding-left: 5px;
 }
 
+.callout_grid {
+  position: relative;
+  margin: 45px 0;
+}
+
+.callout_grid_intro {
+  font-size: 1.125rem;
+}
+
+.callout_grid_cta a {
+  font-weight: 300;
+  letter-spacing: 0.001em;
+  border: 2px solid #C20000;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  color: #C20000;
+}
+
+.callout_grid_cta a:hover {
+  background: rgba(194, 0, 0, 0.6);
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .callout_grid_header h2 {
+    font-weight: 300;
+    font-size: 1.875rem;
+    line-height: 1.2em;
+    margin-bottom: 0.8em;
+    color: #C20000;
+  }
+  .callout_grid_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .callout_grid_image {
+    padding-right: 10px;
+    margin: 20px 0;
+  }
+  .callout_grid_image + .callout_grid_image {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .callout_grid_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .callout_grid_image_1,
+  .callout_grid_image_2 {
+    width: 50%;
+  }
+  .callout_grid_intro,
+  .callout_grid_cta {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .callout_grid_image_1,
+  .callout_grid_image_2 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .callout_grid_inner {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "photo2 intro" "photo2 photo1" "cta photo1";
+  }
+}
+
 /*
  *  Owl Carousel - Core
  */
