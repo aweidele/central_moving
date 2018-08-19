@@ -1,5 +1,7 @@
 <?php
-
+  $services = new WP_Query([
+    "post_type" => "services"
+  ]);
 ?>
 <section class="callout_grid services_grid">
   <div class="row">
@@ -17,6 +19,13 @@
             <p class="callout_grid_intro_inner">
               <?=$block["description"]?>
             </p>
+            <?php if( $services -> have_posts() ) { ?>
+            <ul class="services_grid_list">
+              <?php while( $services -> have_posts() ) { $services -> the_post(); ?>
+              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+              <?php } ?>
+            </ul>
+            <?php } ?>
           </div>
           <div class="callout_grid_cta">
             <a href=""><?=$block["link_label"] ? $block["link_label"] : "Our Services"?></a>

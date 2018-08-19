@@ -37,4 +37,4 @@
     // 'rewrite' => array(
     //   'slug' => 'client'),
   );
-  register_post_type( 'service', $args );
+  register_post_type( 'services', $args );
