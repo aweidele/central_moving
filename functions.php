@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 add_image_size( 'hero-image', 1440, 537, true );
 add_image_size( 'hero-image-sm', 1080, 403, true );
 
-add_image_size( 'grid-image-300', 300, 999999, false );
+add_image_size( 'grid-image-368', 368, 999999, false );
 add_image_size( 'grid-image-443', 443, 999999, false );
 add_image_size( 'grid-image-500', 500, 999999, false );
 add_image_size( 'grid-image-546', 546, 999999, false );

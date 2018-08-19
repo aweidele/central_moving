@@ -999,24 +999,38 @@ button {
     justify-self: end;
   }
   .callout_grid_2 .callout_grid_inner {
-    grid-template-columns: 400px auto;
+    grid-template-columns: 45% 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "subhead photo2" "photo1 photo2" "intro photo2" "intro cta";
   }
   .callout_grid_2 .callout_grid_subhead {
     grid-area: subhead;
+    padding-bottom: 1em;
   }
   .callout_grid_2 .callout_grid_intro {
     grid-area: intro;
+    padding-top: 1em;
   }
   .callout_grid_2 .callout_grid_intro_inner {
-    max-width: 300px;
+    max-width: 348px;
   }
   .callout_grid_2 .callout_grid_image_1 {
     grid-area: photo1;
   }
+  .callout_grid_2 .callout_grid_image_1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 368px;
+  }
   .callout_grid_2 .callout_grid_image_2 {
     grid-area: photo2;
+  }
+  .callout_grid_2 .callout_grid_image_2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 36px;
   }
   .callout_grid_2 .callout_grid_cta {
     grid-area: cta;
@@ -1045,7 +1059,8 @@ button {
             transform: translate(-50%, 0);
   }
   .callout_grid_2 .callout_grid_header {
-    display: none;
+    left: 45%;
+    bottom: 15%;
   }
   .callout_grid_header h2 {
     color: #FFFFFF;
