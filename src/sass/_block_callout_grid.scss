@@ -3,8 +3,23 @@
   margin: 45px 0;
 }
 
+.callout_grid_header {
+  &,h2 {
+    transition: all 2s;
+  }
+
+  h2 {
+    @include h2;
+    color: $red;
+  }
+}
+
 .callout_grid_intro {
   font-size: 18px;
+
+  strong {
+    color: $red;
+  }
 }
 
 .callout_grid_cta {
@@ -13,12 +28,27 @@
   }
 }
 
+.callout_grid_image {
+  &,
+  img {
+    max-width: 100%;
+  }
+}
+
 // Mobile
-@media #{$maxMD} {
+@media #{$maxLG} {
   .callout_grid_header {
     h2 {
       @include h2;
       color: $red;
+    }
+  }
+}
+
+@media #{$maxMD} {
+  .callout_grid_header {
+    h2 {
+
     }
   }
 
@@ -63,15 +93,67 @@
 
 // Desktop
 @media #{$minMD} {
-  .callout_grid_inner {
-    display: grid;
-    grid-column-gap: 20px;
+  .grid_1 {
+    .callout_grid_inner {
+      display: grid;
+      grid-column-gap: $gutter;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "photo2 intro"
-      "photo2 photo1"
-      "cta photo1";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "photo1 intro"
+        "photo1 photo2"
+        "cta photo2";
+    }
+
+    .callout_grid_intro {
+      grid-area: intro;
+      padding-top: 50px;
+    }
+
+    .callout_grid_intro_inner {
+      max-width: 385px;
+      padding-bottom: $gutter;
+    }
+
+    .callout_grid_image_1 {
+      grid-area: photo1;
+      justify-self: end;
+    }
+
+    .callout_grid_image_2 {
+      grid-area: photo2;
+    }
+
+    .callout_grid_cta {
+      grid-area: cta;
+      justify-self: end;
+    }
+  }
+}
+
+@media #{$minLG} {
+  .callout_grid_header {
+    width: 180px;
+    height: 180px;
+
+    position: absolute;
+
+    display: flex;
+    align-items: flex-end;
+
+    background: $red;
+    padding: $gutter;
+
+    .grid_1 & {
+      bottom: 22%;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+
+    h2 {
+      color: $white;
+      margin: 0;
+    }
   }
 }

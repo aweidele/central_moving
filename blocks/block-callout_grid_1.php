@@ -7,9 +7,11 @@
           <h2><?=$block["title"]?></h2>
         </header>
         <div class="callout_grid_inner">
-          <p class="callout_grid_intro">
-            <?=nl2br($block["description"])?>
-          </p>
+          <div class="callout_grid_intro">
+            <div class="callout_grid_intro_inner">
+              <?=$block["description"]?>
+            </div>
+          </div>
           <figure class="callout_grid_image callout_grid_image_1">
             <img src="<?=$block["image_1"]["sizes"]["grid-image-443"]?>">
           </figure>
@@ -24,5 +26,3 @@
     </section>
   </div>
 </div>
-
-<pre><?php print_r($block); ?></pre>

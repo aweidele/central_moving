@@ -857,8 +857,25 @@ button {
   margin: 45px 0;
 }
 
+.callout_grid_header, .callout_grid_header h2 {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.callout_grid_header h2 {
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+  color: #C20000;
+}
+
 .callout_grid_intro {
   font-size: 1.125rem;
+}
+
+.callout_grid_intro strong {
+  color: #C20000;
 }
 
 .callout_grid_cta a {
@@ -880,7 +897,12 @@ button {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
+.callout_grid_image,
+.callout_grid_image img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
   .callout_grid_header h2 {
     font-weight: 300;
     font-size: 1.875rem;
@@ -888,6 +910,9 @@ button {
     margin-bottom: 0.8em;
     color: #C20000;
   }
+}
+
+@media screen and (max-width: 768px) {
   .callout_grid_inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -930,12 +955,57 @@ button {
 }
 
 @media screen and (min-width: 769px) {
-  .callout_grid_inner {
+  .grid_1 .callout_grid_inner {
     display: grid;
     grid-column-gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
-    grid-template-areas: "photo2 intro" "photo2 photo1" "cta photo1";
+    grid-template-areas: "photo1 intro" "photo1 photo2" "cta photo2";
+  }
+  .grid_1 .callout_grid_intro {
+    grid-area: intro;
+    padding-top: 50px;
+  }
+  .grid_1 .callout_grid_intro_inner {
+    max-width: 385px;
+    padding-bottom: 20px;
+  }
+  .grid_1 .callout_grid_image_1 {
+    grid-area: photo1;
+    justify-self: end;
+  }
+  .grid_1 .callout_grid_image_2 {
+    grid-area: photo2;
+  }
+  .grid_1 .callout_grid_cta {
+    grid-area: cta;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .callout_grid_header {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background: #C20000;
+    padding: 20px;
+  }
+  .grid_1 .callout_grid_header {
+    bottom: 22%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .callout_grid_header h2 {
+    color: #FFFFFF;
+    margin: 0;
   }
 }
 
