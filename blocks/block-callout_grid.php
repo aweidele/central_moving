@@ -25,10 +25,10 @@
             </div>
           </div>
           <figure class="callout_grid_image callout_grid_image_1">
-            <img src="<?=$block["image_1"]["sizes"][$grid_image_sz1]?>">
+            <img src="<?=$block["image_1"]["sizes"][$grid_image_sz1]?>" alt="<?=$block["image_1"]["alt"] ? $block["image_1"]["alt"] : ""?>">
           </figure>
           <figure class="callout_grid_image callout_grid_image_2">
-            <img src="<?=$block["image_2"]["sizes"][$grid_image_sz2]?>">
+            <img src="<?=$block["image_2"]["sizes"][$grid_image_sz2]?>" alt="<?=$block["image_2"]["alt"] ? $block["image_2"]["alt"] : ""?>">
           </figure>
           <div class="callout_grid_cta">
             <a href="<?=$block["link"]["url"]?>"><?=$block["link"]["title"] ? $block["link"]["title"] : "Read More"?></a>
