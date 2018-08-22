@@ -32,7 +32,7 @@
     'capability_type' => 'post',
     'hierarchical' => false,
     'menu_position' => null,
-    'supports' => array( 'title'),
+    'supports' => array( 'title', 'thumbnail' ),
     'has_archive' => true,
     // 'rewrite' => array(
     //   'slug' => 'client'),

@@ -477,6 +477,79 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b7bffd0d514c": {
+                    "key": "5b7bffd0d514c",
+                    "name": "featured_case_studies",
+                    "label": "Featured Case Studies",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b7bffd9d514d",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Featured Case Studies",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b7bffe9d514e",
+                            "label": "Featured Case Studies",
+                            "name": "featured_case_studies",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "case-study"
+                            ],
+                            "taxonomy": [],
+                            "filters": "",
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": 1,
+                            "max": "",
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_5b7c0016d514f",
+                            "label": "Link Label",
+                            "name": "link_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Case Studies",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -501,5 +574,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534711360
+    "modified": 1534853698
 }
