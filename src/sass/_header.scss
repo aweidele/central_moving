@@ -9,6 +9,10 @@
   z-index: 1000;
 
   background: $red;
+
+  .loggedin & {
+    top: 32px;
+  }
 }
 
 .header_logo {

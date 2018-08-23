@@ -34,7 +34,7 @@
     'menu_position' => null,
     'supports' => array( 'title', 'thumbnail' ),
     'has_archive' => true,
-    // 'rewrite' => array(
-    //   'slug' => 'client'),
+    'rewrite' => array(
+      'slug' => 'case-studies'),
   );
   register_post_type( 'case-study', $args );

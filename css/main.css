@@ -357,6 +357,10 @@ button {
   background: #C20000;
 }
 
+.loggedin .header {
+  top: 32px;
+}
+
 .header_logo {
   font-size: 1rem;
   line-height: 1em;
@@ -635,6 +639,7 @@ button {
 .hero_wrapper {
   position: relative;
   z-index: 0;
+  padding-top: 70px;
 }
 
 .hero_item {
@@ -1142,6 +1147,28 @@ button {
   .services_grid_list a {
     padding: 10px 0;
   }
+}
+
+.case_study_hero figure {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.case_study_hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.case_study_right_images a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.case_study_right_images img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*
