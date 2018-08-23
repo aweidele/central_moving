@@ -2,6 +2,10 @@
   background: $gray_0;
   padding: 45px 0;
 
+  .industry_list + & {
+    background: $white;
+  }
+
   h2 {
     @include h2;
   }

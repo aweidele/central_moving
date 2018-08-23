@@ -740,6 +740,10 @@ button {
   padding: 45px 0;
 }
 
+.industry_list + .testimonial {
+  background: #FFFFFF;
+}
+
 .testimonial h2 {
   font-weight: 300;
   font-size: 1.875rem;
@@ -796,6 +800,10 @@ button {
 .industry_list {
   background: #F0F0F0;
   padding: 45px 0;
+}
+
+.testimonial + .industry_list {
+  background: #FFFFFF;
 }
 
 .industry_list header {
@@ -1254,6 +1262,52 @@ button {
         -ms-flex-order: 1;
             order: 1;
   }
+}
+
+.client_list {
+  margin: 75px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .client_list {
+    margin: 90px 0;
+  }
+}
+
+.client_list h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  margin-bottom: 0.41667em;
+  color: #C20000;
+}
+
+.client_list ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 769px) {
+  .client_list ul {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .client_list ul {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+.client_list li {
+  border-bottom: 1px solid #E0E0E0;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+  color: #333333;
+  padding: 10px 0;
 }
 
 /*

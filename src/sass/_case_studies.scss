@@ -65,3 +65,37 @@
     order: 1
   }
 }
+
+
+.client_list {
+  margin: 75px 0;
+
+  @media #{$minXL} {
+    margin: 90px 0;
+  }
+  
+  h2 {
+    @include h3;
+    color: $red;
+  }
+
+  ul {
+    list-style: none;
+
+    @media #{$minMD} {
+      column-count: 2;
+      column-gap: $gutter;
+    }
+
+    @media #{$minLG} {
+      column-count: 3;
+    }
+  }
+
+  li {
+    border-bottom: 1px solid $gray_1;
+    break-inside: avoid;
+    color: $gray_9;
+    padding: 10px 0;
+  }
+}

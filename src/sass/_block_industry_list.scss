@@ -2,6 +2,10 @@
   background: $gray_0;
   padding: 45px 0;
 
+  .testimonial + & {
+    background: $white;
+  }
+
   header {
     margin-bottom: 24px;
   }

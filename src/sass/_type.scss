@@ -29,6 +29,13 @@ button {
   margin-bottom: (24 / 30) * 1em;
 }
 
+@mixin h3 {
+  @include fw_light;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: (10 / 24) * 1em;
+}
+
 @mixin quote {
   @include fw_light;
   font-size: 24px;

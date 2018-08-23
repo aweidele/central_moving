@@ -1,6 +1,9 @@
 <?php
   get_header();
+  if( have_posts() ) : while( have_posts() ) : the_post();
   $fields = get_fields();
+  $terms = wp_get_post_terms($post->ID, "industry");
+  $client_list = explode("\n", $fields["client_list"]);
 ?>
   <div class="hero_wrapper case_study_hero">
     <figure>
@@ -34,7 +37,30 @@
         </div>
       </div>
     </div>
-    <pre><?php print_r($fields); ?></pre>
+    <section class="client_list">
+      <div class="row">
+        <div class="col_xl_9 push_xl_1">
+          <header>
+            <h2><?php
+              if($fields["client_list_title"]) {
+                echo $fields["client_list_title"];
+              } else {
+                echo $terms[0]->name." Clients";
+              }
+            ?></h2>
+          </header>
+          <ul>
+            <?php foreach($client_list as $client) { ?>
+            <li><?=$client?></li>
+            <?php } ?>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <?php cm_blocks($fields["blocks"]); ?>
+    <pre><?php //print_r($fields); ?></pre>
   </main>
 <?php
+  endwhile;
+  endif;
   get_footer();
