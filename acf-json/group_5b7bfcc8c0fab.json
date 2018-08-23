@@ -3,6 +3,22 @@
     "title": "Case Studies",
     "fields": [
         {
+            "key": "field_5b7ea52f7df81",
+            "label": "Main Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5b7dfacd740b4",
             "label": "Hero Image",
             "name": "hero_image",
@@ -84,6 +100,22 @@
             "delay": 0
         },
         {
+            "key": "field_5b7ea54a7df82",
+            "label": "Right Side Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5b7dfbe6740b5",
             "label": "Right Side Images",
             "name": "right_side_images",
@@ -147,6 +179,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_5b7ea5657df83",
+            "label": "Client List",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5b7dfcc40aad9",
             "label": "Client List Title",
             "name": "client_list_title",
@@ -202,5 +250,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534983737
+    "modified": 1535026638
 }
