@@ -57,3 +57,57 @@
     color: $red;
   }
 }
+
+@mixin statbox {
+  width: 180px;
+  height: 180px;
+
+  border: 5px solid $red;
+  padding: 10px;
+
+  .stat_figure {
+    color: $red;
+    display: block;
+    font-size: 36px;
+    margin-bottom: (16 / 36) * 1em;
+  }
+
+  .stat_description {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+}
+
+@mixin nextprev {
+  font-size: 14px;
+
+  a {
+    color: $gray_3;
+    display: inline-block;
+    line-height: 1.2em;
+
+    &:before,
+    &:after {
+      display: inline-block;
+    }
+
+    &:first-child {
+      &:before {
+        content: "<";
+        padding-right: 2px;
+      }
+      &:after {
+        content: "|";
+        padding-left: 5px;
+        padding-right: 3px;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        content: ">";
+        padding-left: 2px;
+      }
+    }
+  }
+}

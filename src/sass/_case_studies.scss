@@ -21,12 +21,47 @@
   }
 }
 
+.case_study_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  > * {
+    order: 2;
+  }
+}
+
 .case_study_right_images {
   a {
     display: block;
-    margin-bottom: $gutter;
+
+    + a {
+      margin-top: $gutter;
+    }
   }
   img {
     @include img_block;
+  }
+}
+
+.case_study_stat {
+  @include statbox;
+  margin-top: -53px;
+  margin-right: $gutter;
+
+}
+
+.case_study_nav {
+  @include nextprev;
+  margin: 27px 0;
+}
+
+@media #{$minMD} {
+  .case_study_stat {
+    margin-right: $gutter * -1;
+  }
+
+  .case_study_nav {
+    order: 1
   }
 }

@@ -21,11 +21,20 @@
               </figure></a>
             <?php } ?>
           </aside>
+          <aside class="case_study_stat">
+            <p>
+              <span class="stat_figure"><?=$fields["stat_figure"]?></span>
+              <span class="stat_description"><?=$fields["stat_description"]?></span>
+            </p>
+          </aside>
+          <nav class="case_study_nav">
+            <a href="">Prev</a>
+            <a href="">Next</a>
+          </nav>
         </div>
       </div>
     </div>
     <pre><?php print_r($fields); ?></pre>
   </main>
-  <pre><?php print_r($post); ?></pre>
 <?php
   get_footer();
