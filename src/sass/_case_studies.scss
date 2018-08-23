@@ -10,6 +10,16 @@
 
 
 // Case Studies Single
+.case_study_term {
+  @include term;
+}
+
+.case_study_blurb {
+  p {
+    @include paragraph;
+  }
+}
+
 .case_study_hero {
   figure {
     max-height: 400px;
@@ -24,7 +34,10 @@
 .case_study_right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
+  @media #{$minSM} {
+    align-items: flex-end;
+  }
 
   > * {
     order: 2;
@@ -47,6 +60,7 @@
 .case_study_stat {
   @include statbox;
   margin-top: -53px;
+  margin-left: $gutter;
   margin-right: $gutter;
 
 }
@@ -73,7 +87,7 @@
   @media #{$minXL} {
     margin: 90px 0;
   }
-  
+
   h2 {
     @include h3;
     color: $red;

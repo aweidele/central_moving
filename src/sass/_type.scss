@@ -22,6 +22,13 @@ button {
   letter-spacing: ($track / 1000) * 1em;
 }
 
+@mixin h1 {
+  @include fw_light;
+  font-size: 36px;
+  line-height: 1.2em;
+  margin-bottom: (24 / 30) * 1em;
+}
+
 @mixin h2 {
   @include fw_light;
   font-size: 30px;
@@ -34,6 +41,11 @@ button {
   font-size: 24px;
   line-height: 1.2em;
   margin-bottom: (10 / 24) * 1em;
+}
+
+@mixin paragraph {
+  font-size: 18px;
+  margin-bottom: 1em;
 }
 
 @mixin quote {
@@ -52,4 +64,10 @@ button {
     content: "—";
     display: inline-block;
   }
+}
+
+@mixin term {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }

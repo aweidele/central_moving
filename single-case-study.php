@@ -13,7 +13,15 @@
   <main class="main case_study_main">
     <div class="row">
       <div class="col_md_4 col_lg_5 col_xl_4 push_xl_1">
-        Left
+        <div class="main_content_block">
+          <div class="case_study_term"><?=$terms[0]->name?></div>
+          <h1><?=$post->post_title?></h1>
+          <p class="intro_text"><?=$fields["intro_text"]?></p>
+          <?=wpautop($fields["content"])?>
+        </div>
+        <div class="case_study_blurb">
+          <?=wpautop($fields["content"])?>
+        </div>
       </div>
       <div class="col_md_4 col_lg_5 col_xl_4 push_lg_1">
         <div class="case_study_right">
@@ -58,7 +66,6 @@
       </div>
     </section>
     <?php cm_blocks($fields["blocks"]); ?>
-    <pre><?php //print_r($fields); ?></pre>
   </main>
 <?php
   endwhile;

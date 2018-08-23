@@ -1,7 +1,50 @@
 .main {
+  position: relative;
+  z-index: 10;
   padding-top: $headerHeight;
 
   .hero_wrapper + & {
     padding-top: 0;
+  }
+}
+
+.main_content_block {
+  width: 100%;
+
+  background: $red;
+  color: $white;
+  margin-bottom: 24px;
+  padding: $gutter;
+
+  @media #{$minMD} {
+    margin-top: -10px;
+  }
+
+  @media #{$minLG} {
+    box-sizing: content-box;
+    margin-left: $gutter * -2;
+    margin-top: -80px;
+    padding: $gutter * 2 $gutter $gutter * 2 $gutter * 2;
+  }
+
+  @media #{$minXL} {
+    margin-top: -170px;
+  }
+
+  h1 {
+    @include h1;
+  }
+
+  p {
+    @include paragraph;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .intro_text {
+    @include fw_light;
+    font-size: 26px;
   }
 }
