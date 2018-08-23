@@ -98,7 +98,7 @@
 
     @media #{$minMD} {
       column-count: 2;
-      column-gap: $gutter;
+      column-gap: $gutter * 2;
     }
 
     @media #{$minLG} {
