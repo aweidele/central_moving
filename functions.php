@@ -27,6 +27,7 @@ add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'hero-image', 1440, 537, true );
 add_image_size( 'hero-image-sm', 1080, 403, true );
+add_image_size( 'case_study_listing', 518, 999999, false );
 
 add_image_size( 'grid-image-368', 368, 999999, false );
 add_image_size( 'grid-image-443', 443, 999999, false );
