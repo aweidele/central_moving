@@ -31,6 +31,8 @@ add_image_size( 'hero-image-sm', 1080, 403, true );
 add_image_size( 'case_study_listing', 518, 999999, false );
 add_image_size( 'case_study_hero', 1400, 313, false );
 
+add_image_size( 'bio_thumb', 180, 180, true );
+
 add_image_size( 'grid-image-368', 368, 999999, false );
 add_image_size( 'grid-image-443', 443, 999999, false );
 add_image_size( 'grid-image-500', 500, 999999, false );

@@ -1382,6 +1382,13 @@ button {
   padding: 10px 0;
 }
 
+.our_people_thumb {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  overflow: hidden;
+}
+
 /*
  *  Owl Carousel - Core
  */
