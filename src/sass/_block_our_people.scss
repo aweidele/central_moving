@@ -5,6 +5,7 @@
 
   @media #{$minXL} {
     margin: 90px 0;
+    padding-bottom: 90px;
   }
 
   &:last-child {
@@ -56,5 +57,28 @@
     &:hover {
       color: $red;
     }
+  }
+}
+
+.our_people_additional {
+  font-size: 17px;
+  line-height: 1.2em;
+  list-style: none;
+  padding-top: $gutter * 2;
+
+  @media #{$minSM} {
+    column-count: 2;
+    column-gap: $gutter;
+    padding-top: $gutter * 3;
+  }
+
+  @media #{$minLG} {
+    column-count: 3;
+    padding-top: $gutter * 4;
+  }
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 0.2em;
   }
 }

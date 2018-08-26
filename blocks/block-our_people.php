@@ -3,6 +3,8 @@
     "post_type" => "our-people",
     "posts_per_page" => -1
   ]);
+
+  $additional_people = explode("\n", $block["additional_people"]);
 ?>
 <section class="our_people" id="our-people">
   <div class="row">
@@ -35,6 +37,11 @@
 
         <?php } ?>
       </div>
+      <ul class="our_people_additional">
+        <?php foreach($additional_people as $people) { ?>
+        <li><?=$people?></li>
+        <?php } ?>
+      </ul>
     </div>
   </div>
 </section>
