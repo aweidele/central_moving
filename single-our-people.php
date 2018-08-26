@@ -1,10 +1,52 @@
 <?php
   get_header();
+
+  // Determine next and previous links
+  $allBios = get_posts([
+    "post_type" => "our-people"
+  ]);
+  $thisBio = $post->ID;
+  foreach( $allBios as $i => $bio ) {
+    if($bio->ID == $thisBio) {
+      break;
+    }
+  }
+
+
+  $totalBios = sizeof($allBios) - 1;
+  $prev = $i - 1;
+  $next = $i + 1;
+
+  if( $prev < 0 ) {
+    $prev = $totalBios;
+  } else if( $next > $totalBios) {
+    $next = 0;
+  }
+
+  $nextBio = get_permalink($allBios[$next]->ID);
+  $prevBio = get_permalink($allBios[$prev]->ID);
+
+  $about = get_permalink(34);
+
   if( have_posts() ) : while( have_posts() ) : the_post();
-  $fields = get_fields();
-  $thumbnail = get_the_post_thumbnail($post->ID, "bio_thumb");
+    $fields = get_fields();
+    $thumbnail = get_the_post_thumbnail($post->ID, "bio_thumb");
 ?>
   <main class="main our_people_main" itemscope itemtype="http://schema.org/Person">
+    <div class="row">
+      <div class="col_md_4 col_lg_7 col_xl_6 push_xl_1">
+        <nav class="breadcrumb">
+          <a href="<?=$about?>">About</a>
+          <a href="<?=rtrim($about,"/")?>#our-people">Bios</a>
+        </nav>
+      </div>
+      <div class="col_md_4 col_lg_4 col_xl_3">
+        <nav class="our_people_nav">
+          <a href="<?=$prevBio?>">Prev</a>
+          <a href="<?=$nextBio?>">Next</a>
+        </nav>
+      </div>
+    </div>
     <div class="row">
       <div class="col_md_4 col_lg_7 col_xl_6 push_xl_1">
         <header class="our_people_header">

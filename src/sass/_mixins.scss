@@ -109,5 +109,9 @@
         padding-left: 2px;
       }
     }
+
+    &:hover {
+      color: $red;
+    }
   }
 }
