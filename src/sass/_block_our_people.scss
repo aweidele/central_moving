@@ -17,7 +17,44 @@
 }
 
 .our_people_description {
+  margin-bottom: 60px;
   p {
     @include paragraph;
+  }
+}
+
+.our_people_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $gutter;
+
+  @media #{$minMD} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media #{$minLG} {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.our_people_grid_info {
+  max-width: 180px;
+
+  h3 {
+    font-size: 17px;
+    @include fw_bold;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $red;
+    }
   }
 }

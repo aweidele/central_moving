@@ -1,7 +1,7 @@
 // Single Bio
 .breadcrumb {
   font-size: 14px;
-  padding: $gutter * 4 0;
+  padding: $gutter 0;
 
   a {
     color: $gray_3;
@@ -26,8 +26,22 @@
 
 .our_people_nav {
   @include nextprev;
-  padding: $gutter * 4 0;
+  padding: $gutter 0;
   text-align: right;
+}
+
+@media #{$minSM} {
+  .breadcrumb,
+  .our_people_nav {
+    padding: $gutter * 2 0;
+  }
+}
+
+@media #{$minMD} {
+  .breadcrumb,
+  .our_people_nav {
+    padding: $gutter * 4 0;
+  }
 }
 
 .our_people_main {
@@ -67,9 +81,17 @@
   width: 180px;
   height: 180px;
 
+  max-width: 100%;
+
   border-radius: 90px;
   margin-bottom: 10px;
   overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .our_people_info {

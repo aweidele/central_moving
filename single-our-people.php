@@ -3,7 +3,8 @@
 
   // Determine next and previous links
   $allBios = get_posts([
-    "post_type" => "our-people"
+    "post_type" => "our-people",
+    "posts_per_page" => -1
   ]);
   $thisBio = $post->ID;
   foreach( $allBios as $i => $bio ) {
@@ -34,13 +35,13 @@
 ?>
   <main class="main our_people_main" itemscope itemtype="http://schema.org/Person">
     <div class="row">
-      <div class="col_md_4 col_lg_7 col_xl_6 push_xl_1">
+      <div class="col_sm_1 col_md_2 col_lg_7 col_xl_6 push_xl_1">
         <nav class="breadcrumb">
           <a href="<?=$about?>">About</a>
           <a href="<?=rtrim($about,"/")?>#our-people">Bios</a>
         </nav>
       </div>
-      <div class="col_md_4 col_lg_4 col_xl_3">
+      <div class="col_sm_1 col_md_2 col_lg_4 col_xl_3">
         <nav class="our_people_nav">
           <a href="<?=$prevBio?>">Prev</a>
           <a href="<?=$nextBio?>">Next</a>

@@ -1246,10 +1246,54 @@ button {
   margin-bottom: 0.8em;
 }
 
+.our_people_description {
+  margin-bottom: 60px;
+}
+
 .our_people_description p {
   font-size: 1.125rem;
   line-height: 1.2em;
   margin-bottom: 1em;
+}
+
+.our_people_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .our_people_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .our_people_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.our_people_grid_info {
+  max-width: 180px;
+}
+
+.our_people_grid_info h3 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.our_people_grid_info p {
+  font-size: 1.0625rem;
+}
+
+.our_people_grid_info a {
+  color: #000000;
+}
+
+.our_people_grid_info a:hover {
+  color: #C20000;
 }
 
 .case_study_term {
@@ -1429,7 +1473,7 @@ button {
 
 .breadcrumb {
   font-size: 0.875rem;
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 .breadcrumb a {
@@ -1454,7 +1498,7 @@ button {
 
 .our_people_nav {
   font-size: 0.875rem;
-  padding: 80px 0;
+  padding: 20px 0;
   text-align: right;
 }
 
@@ -1486,6 +1530,20 @@ button {
 
 .our_people_nav a:hover {
   color: #C20000;
+}
+
+@media screen and (min-width: 426px) {
+  .breadcrumb,
+  .our_people_nav {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .breadcrumb,
+  .our_people_nav {
+    padding: 80px 0;
+  }
 }
 
 .our_people_main {
@@ -1528,9 +1586,16 @@ button {
 .our_people_thumb {
   width: 180px;
   height: 180px;
+  max-width: 100%;
   border-radius: 90px;
   margin-bottom: 10px;
   overflow: hidden;
+}
+
+.our_people_thumb img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .our_people_info dl {
