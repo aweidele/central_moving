@@ -1,6 +1,6 @@
 {
     "key": "group_5b72d69406820",
-    "title": "Content",
+    "title": "Full Width Blocks",
     "fields": [
         {
             "key": "field_5b72d69a4dcee",
@@ -550,6 +550,73 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b82c2e8112cd": {
+                    "key": "5b82c2e8112cd",
+                    "name": "our_people",
+                    "label": "Our People",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b82c2fa112ce",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Our People",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b82c314112cf",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "wpautop"
+                        },
+                        {
+                            "key": "field_5b82c33c112d0",
+                            "label": "Additional People",
+                            "name": "additional_people",
+                            "type": "textarea",
+                            "instructions": "One name name per line",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -581,5 +648,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534983518
+    "modified": 1535296651
 }

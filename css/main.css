@@ -608,6 +608,7 @@ button {
 
 .main_content_block p {
   font-size: 1.125rem;
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -795,6 +796,8 @@ button {
   padding: 45px 0;
 }
 
+.our_people + .testimonial,
+.testimonial + .testimonial,
 .industry_list + .testimonial {
   background: #FFFFFF;
 }
@@ -857,7 +860,9 @@ button {
   padding: 45px 0;
 }
 
-.testimonial + .industry_list {
+.our_people + .industry_list,
+.testimonial + .industry_list,
+.industry_list + .industry_list {
   background: #FFFFFF;
 }
 
@@ -1212,6 +1217,41 @@ button {
   }
 }
 
+.our_people {
+  background: #F0F0F0;
+  padding: 45px 0;
+  margin: 75px 0;
+}
+
+.our_people + .our_people,
+.testimonial + .our_people,
+.industry_list + .our_people {
+  background: #FFFFFF;
+}
+
+@media screen and (min-width: 1440px) {
+  .our_people {
+    margin: 90px 0;
+  }
+}
+
+.our_people:last-child {
+  margin-bottom: 0;
+}
+
+.our_people_heading {
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.our_people_description p {
+  font-size: 1.125rem;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
 .case_study_term {
   font-size: 0.875rem;
   letter-spacing: 0.01em;
@@ -1220,6 +1260,7 @@ button {
 
 .case_study_blurb p {
   font-size: 1.125rem;
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -1467,6 +1508,7 @@ button {
 
 .our_people_bio p {
   font-size: 1.125rem;
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 

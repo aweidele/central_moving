@@ -115,3 +115,14 @@
     }
   }
 }
+
+@mixin followwhite {
+  background: $gray_0;
+  padding: 45px 0;
+
+  .our_people + & ,
+  .testimonial + & ,
+  .industry_list+ &  {
+    background: $white;
+  }
+}

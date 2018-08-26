@@ -1,0 +1,23 @@
+// Bio Listing
+.our_people {
+  @include followwhite;
+  margin: 75px 0;
+
+  @media #{$minXL} {
+    margin: 90px 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.our_people_heading {
+  @include h2;
+}
+
+.our_people_description {
+  p {
+    @include paragraph;
+  }
+}

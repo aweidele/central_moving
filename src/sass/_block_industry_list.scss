@@ -1,10 +1,5 @@
 .industry_list {
-  background: $gray_0;
-  padding: 45px 0;
-
-  .testimonial + & {
-    background: $white;
-  }
+  @include followwhite;
 
   header {
     margin-bottom: 24px;
