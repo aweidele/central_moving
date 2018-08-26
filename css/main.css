@@ -1386,7 +1386,49 @@ button {
   width: 180px;
   height: 180px;
   border-radius: 90px;
+  margin-bottom: 10px;
   overflow: hidden;
+}
+
+.our_people_info dl {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 10px 0;
+}
+
+.our_people_info dt,
+.our_people_info dd,
+.our_people_info li {
+  font-size: 0.875rem;
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+.our_people_info dd,
+.our_people_info a {
+  color: #808080;
+}
+
+.our_people_info a {
+  text-decoration: underline;
+}
+
+.our_people_info a[href^="tel"] {
+  text-decoration: none;
+}
+
+.our_people_info a:hover {
+  color: #C20000;
+}
+
+.our_people_info ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.our_people_contact {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
 }
 
 /*

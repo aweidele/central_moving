@@ -7,5 +7,49 @@
   height: 180px;
 
   border-radius: 90px;
+  margin-bottom: 10px;
   overflow: hidden;
+}
+
+.our_people_info {
+  dl {
+    border-bottom: 1px solid $gray_1;
+    padding: 10px 0;
+  }
+
+  dt,
+  dd,
+  li {
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 0.3em;
+  }
+
+  dd,
+  a {
+    color: $gray_3;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &[href^="tel"] {
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-top: 10px;
+  }
+}
+
+.our_people_contact {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
 }
