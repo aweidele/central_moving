@@ -1,4 +1,5 @@
 <div class="hero_wrapper">
+  <?php if($hero["mode"] == "carousel") { ?>
   <div class="hero owl-carousel" data-options='{"items":1,"dots":false,"loop":true,"autoplay":true,"autoplayTimeout":<?=$heroSpeed?>}'>
     <?php
       foreach($hero as $slide) {
@@ -26,4 +27,13 @@
       }
     ?>
   </div>
+<?php } else { ?>
+  <div class="hero">
+    <div class="hero_item">
+      <figure class="hero_image">
+        <img src="<?=$hero["sizes"]["hero-image-sm"]; ?>">
+      </figure>
+    </div>
+  </div>
+<?php } ?>
 </div>
