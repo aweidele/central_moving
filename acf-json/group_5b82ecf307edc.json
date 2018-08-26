@@ -132,6 +132,96 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b83068e5d53b": {
+                    "key": "5b83068e5d53b",
+                    "name": "stat_box",
+                    "label": "Stat Box",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b8306a05d53c",
+                            "label": "Stat Figure",
+                            "name": "stat_figure",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b8306ad5d53d",
+                            "label": "Stat Description",
+                            "name": "stat_description",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5b8306d25d53e",
+                            "label": "Position X",
+                            "name": "position_x",
+                            "type": "number",
+                            "instructions": "(pixels)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": -100,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5b8306e95d53f",
+                            "label": "Position Y",
+                            "name": "position_y",
+                            "type": "number",
+                            "instructions": "(pixels)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -198,5 +288,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1535311688
+    "modified": 1535315447
 }

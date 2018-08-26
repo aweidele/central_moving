@@ -1,0 +1,18 @@
+.stat_box {
+  position: relative;
+}
+
+.stat_box_content {
+  @include statbox;
+}
+
+
+@media #{$minMD} {
+  .stat_box {
+    height: $gutter * 2;
+  }
+
+  .stat_box_content {
+    position: absolute;
+  }
+}

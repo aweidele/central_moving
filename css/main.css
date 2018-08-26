@@ -1377,6 +1377,39 @@ button {
   }
 }
 
+.stat_box {
+  position: relative;
+}
+
+.stat_box_content {
+  width: 190px;
+  height: 190px;
+  border: 5px solid #C20000;
+  padding: 10px;
+}
+
+.stat_box_content .stat_figure {
+  font-weight: 300;
+  color: #C20000;
+  display: block;
+  font-size: 2.25rem;
+  margin-bottom: 0.44444em;
+}
+
+.stat_box_content .stat_description {
+  font-size: 1rem;
+  line-height: 1.2em;
+}
+
+@media screen and (min-width: 769px) {
+  .stat_box {
+    height: 40px;
+  }
+  .stat_box_content {
+    position: absolute;
+  }
+}
+
 .case_study_term {
   font-size: 0.875rem;
   letter-spacing: 0.01em;
@@ -1439,8 +1472,8 @@ button {
 }
 
 .case_study_stat {
-  width: 180px;
-  height: 180px;
+  width: 190px;
+  height: 190px;
   border: 5px solid #C20000;
   padding: 10px;
   margin-top: -53px;
@@ -1449,6 +1482,7 @@ button {
 }
 
 .case_study_stat .stat_figure {
+  font-weight: 300;
   color: #C20000;
   display: block;
   font-size: 2.25rem;

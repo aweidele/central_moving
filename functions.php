@@ -22,6 +22,14 @@ function enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
+// Admin Styles
+function load_admin_style() {
+  wp_enqueue_style( 'main_style',
+      get_stylesheet_directory_uri() . '/css/admin.css'
+  );
+}
+add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+
 // Image Sizes
 add_theme_support( 'post-thumbnails' );
 
