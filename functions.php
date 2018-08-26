@@ -55,7 +55,7 @@ require_once("inc/post-types/post-types.php");
 
 // Add Options Page
 $args = [
-	'page_title' => 'Site Options'
+	'page_title' => 'Global Content'
 ];
 acf_add_options_page($args);
 

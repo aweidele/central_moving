@@ -1,5 +1,5 @@
 <?php
-/* Template Name: About */
+/* Template Name: Full Width */
   get_header();
   $fields = get_fields();
   // $hero = $fields["homepage_hero"];

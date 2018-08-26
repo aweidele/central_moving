@@ -1,6 +1,6 @@
 {
     "key": "group_5b6609bf8b895",
-    "title": "Site Options",
+    "title": "Global Content",
     "fields": [
         {
             "key": "field_5b6609cb713da",
@@ -354,7 +354,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-site-options"
+                "value": "acf-options-global-content"
             }
         ]
     ],
@@ -366,5 +366,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1533417819
+    "modified": 1535305893
 }
