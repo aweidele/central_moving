@@ -1,0 +1,33 @@
+.text_and_image {
+  margin: auto;
+
+  &.narrow {
+    max-width: 381px;
+  }
+
+  &.wide {
+    max-width: 509px;
+  }
+
+  figure {
+    margin-bottom: $gutter;
+  }
+
+  img {
+    @include img_block;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  strong {
+    color: $red;
+  }
+
+  transition: all 1s;
+
+  @media #{$maxMD} {
+    transform: translateX(0) !important;
+  }
+}

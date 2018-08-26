@@ -14,12 +14,16 @@
         <p class="intro_text"><?=$fields["intro_text"]?></p>
         <?php the_content(); ?>
       </div>
+      <div class="in_content_blocks">
+        <?php cm_blocks($fields["left_blocks"]); ?>
+      </div>
     </div>
     <div class="col_md_4 col_lg_5 col_xl_4 push_lg_1">
-      Poop
+      <div class="in_content_blocks">
+        <?php cm_blocks($fields["right_blocks"]["left_blocks"]); ?>
+      </div>
     </div>
   </div>
-<pre><?php print_r($fields) ?></pre>
 </main>
 <div class="full_width_blocks">
 <?php cm_blocks($fields["blocks"]); ?>

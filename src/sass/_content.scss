@@ -48,3 +48,11 @@
     font-size: 26px;
   }
 }
+
+.in_content_blocks {
+  margin: 75px 0;
+
+  > section {
+    margin-bottom: $gutter * 4;
+  }
+}

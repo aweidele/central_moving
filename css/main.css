@@ -621,6 +621,14 @@ button {
   font-size: 1.625rem;
 }
 
+.in_content_blocks {
+  margin: 75px 0;
+}
+
+.in_content_blocks > section {
+  margin-bottom: 80px;
+}
+
 .footer {
   background: #C20000;
   color: #FFFFFF;
@@ -1326,6 +1334,47 @@ button {
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
   margin-bottom: 0.2em;
+}
+
+.text_and_image {
+  margin: auto;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.text_and_image.narrow {
+  max-width: 381px;
+}
+
+.text_and_image.wide {
+  max-width: 509px;
+}
+
+.text_and_image figure {
+  margin-bottom: 20px;
+}
+
+.text_and_image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text_and_image p {
+  font-size: 1.125rem;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.text_and_image strong {
+  color: #C20000;
+}
+
+@media screen and (max-width: 768px) {
+  .text_and_image {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+  }
 }
 
 .case_study_term {
