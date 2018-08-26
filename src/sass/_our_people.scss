@@ -1,5 +1,34 @@
 .our_people_main {
+  .row {
+    padding: $gutter * 4 0;
+  }
+}
 
+.our_people_header {
+  h1 {
+    @include h1;
+    color: $red;
+    margin-bottom: 0.2em;
+  }
+}
+
+.our_people_title {
+  font-size: 18px;
+  margin-bottom: (28 / 18) * 1em;
+}
+
+.our_people_bio {
+  p {
+    @include paragraph;
+  }
+
+  @media #{$minMD} {
+    padding-right: $gutter * 2;
+  }
+}
+
+.our_people_intro p {
+  @include h3;
 }
 
 .our_people_thumb {

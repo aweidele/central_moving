@@ -4,10 +4,19 @@
   $fields = get_fields();
   $thumbnail = get_the_post_thumbnail($post->ID, "bio_thumb");
 ?>
-  <main class="main our_people_main">
+  <main class="main our_people_main" itemscope itemtype="http://schema.org/Person">
     <div class="row">
       <div class="col_md_4 col_lg_7 col_xl_6 push_xl_1">
-
+        <header class="our_people_header">
+          <h1 itemprop="name"><?php the_title(); ?></h1>
+          <div class="our_people_title" itemprop="jobTitle"><?=$fields["title"]?></div>
+        </header>
+        <section class="our_people_bio" itemprop="disambiguatingDescription">
+          <div class="our_people_intro">
+            <?=wpautop($fields["intro_text"])?>
+          </div>
+          <?php the_content(); ?>
+        </section>
       </div>
       <div class="col_md_4 col_lg_4 col_xl_3">
         <figure class="our_people_thumb">
@@ -20,19 +29,19 @@
             <?php if($fields["email"]) { ?>
 
             <dt>Email</dt>
-            <dd><a href="mailto:<?=$fields["email"]?>"><?=$fields["email"]?></a></dd>
+            <dd><a href="mailto:<?=$fields["email"]?>" itemprop="email"><?=$fields["email"]?></a></dd>
 
             <?php }
             if($fields["main_phone"]) { ?>
 
             <dt>Main</dt>
-            <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["main_phone"])?>"><?=$fields["main_phone"]?></a></dd>
+            <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["main_phone"])?>" itemprop="telephone"><?=$fields["main_phone"]?></a></dd>
 
             <?php }
             if($fields["direct_phone"]) { ?>
 
             <dt>Direct</dt>
-            <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["direct_phone"])?>"><?=$fields["direct_phone"]?></a></dd>
+            <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["direct_phone"])?>" itemprop="telephone"><?=$fields["direct_phone"]?></a></dd>
 
             <?php } ?>
           </dl>
@@ -57,7 +66,7 @@
 
           <ul>
             <?php foreach($fields["connect"] as $connect) { ?>
-            <li><?=$connect["connect_text"]?> <a href="<?=$connect["link"]["url"]?>" target="_blank"><?=$connect["link"]["title"]?></a></li>
+            <li><?=$connect["connect_text"]?> <a href="<?=$connect["link"]["url"]?>" target="_blank" itemprop="url"><?=$connect["link"]["title"]?></a></li>
             <?php } ?>
           </ul>
 
