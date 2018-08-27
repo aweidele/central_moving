@@ -72,7 +72,6 @@ acf_add_options_page($args);
 
 // Blocks
 function cm_blocks($blocks) {
-
   foreach($blocks as $block) {
     include("blocks/block-".$block["acf_fc_layout"].".php");
   }
