@@ -42,8 +42,8 @@
           <div class="header_nav_wrapper">
             <button class="header_nav_button" id="header_nav_button"><span>Menu</span></button>
             <div class="header_nav_menu">
-              <div class="row">
-                <div class="col_lg_7 push_lg_4">
+              <div class="row flex-end">
+                <div class="col_sm_2 col_md_4 col_lg_7 col_xl_6">
                   <div class="main_nav_wrapper">
                     <h2>Exceptional Service Since 1984</h2>
                     <nav class="main_nav">
