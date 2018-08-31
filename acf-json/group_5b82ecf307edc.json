@@ -277,6 +277,11 @@
                 "param": "post_template",
                 "operator": "!=",
                 "value": "template_fullwidth.php"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "template_services.php"
             }
         ]
     ],
@@ -288,5 +293,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1535315447
+    "modified": 1535717042
 }

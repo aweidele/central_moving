@@ -25,9 +25,7 @@
     </div>
   </div>
 </main>
-<div class="full_width_blocks">
 <?php cm_blocks($fields["blocks"]); ?>
-</div>
 <?php
   endwhile;
   endif;
