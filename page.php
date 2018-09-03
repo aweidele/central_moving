@@ -31,4 +31,4 @@
 <?php
   endwhile;
   endif;
-  get_footer(); ?>
+  get_footer(); 

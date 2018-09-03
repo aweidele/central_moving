@@ -33,7 +33,7 @@
     'hierarchical' => false,
     'menu_position' => null,
     'supports' => array( 'title', 'thumbnail', 'revisions', 'page-attributes' ),
-    'has_archive' => true,
+    'has_archive' => false,
     'rewrite' => array(
       'slug' => 'case-studies'),
   );

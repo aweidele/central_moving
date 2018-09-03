@@ -1,6 +1,55 @@
 // Case Studies case_study_listing
 .case_studies_grid {}
 
+.case_studies_list {
+
+}
+
+.case_study {
+  width: calc(100% + #{$gutter});
+  line-height: 1.4em;
+  margin-bottom: 40px;
+
+  a {
+    display: block;
+    color: $black;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  h2 {
+    @include fw_reg;
+    font-size: 18px;
+  }
+}
+
+.case_study_figure {
+  margin-bottom: 15px;
+
+  img {
+    @include img_block;
+  }
+}
+
+.case_study_terms {
+  list-style: none;
+
+  li {
+    @include term;
+    display: inline-block;
+
+    &:after {
+      content: ", ";
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
 // Case Studies Single
 .case_study_term {
   @include term;

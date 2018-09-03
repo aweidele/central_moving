@@ -47,6 +47,33 @@
     @include fw_light;
     font-size: 26px;
   }
+
+  a {
+    color: $white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.main_content_terms {
+  column-count: 2;
+  column-gap: $gutter;
+  font-size: 16px;
+  line-height: 1.2em;
+  list-style: none;
+
+  li {
+    break-inside: avoid;
+    margin-bottom: (13 / 16) * 1em;
+  }
+
+  a:after {
+    content: ">";
+    display: inline-block;
+    margin-left: (3 / 16) * 1em;
+  }
 }
 
 .in_content_blocks {
