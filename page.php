@@ -11,7 +11,9 @@
     <div class="col_md_4 col_lg_5 col_xl_4 push_xl_1">
       <div class="main_content_block">
         <h1><?=$fields["title"] ? $fields["title"] : $post->post_title?></h1>
+        <?php if($fields["intro_text"]) { ?>
         <p class="intro_text"><?=$fields["intro_text"]?></p>
+        <?php } ?>
         <?php the_content(); ?>
       </div>
       <div class="in_content_blocks">

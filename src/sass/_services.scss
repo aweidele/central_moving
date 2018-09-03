@@ -1,0 +1,38 @@
+.services_main {}
+
+.services_content_wrapper {
+  display: flex;
+  padding: 45px 0;
+}
+
+.services_content {
+  padding-right: $gutter * 2;
+
+  h1 {
+    @include h1;
+    color: $red;
+  }
+
+  .intro_text {
+    @include h3;
+  }
+
+  p {
+    @include paragraph;
+  }
+}
+
+.services_right_rail {}
+
+.services_images {
+  position: relative;
+}
+
+.services_figure {
+}
+
+.services_stat {
+  @include statbox;
+  position: relative;
+  z-index: 0;
+}

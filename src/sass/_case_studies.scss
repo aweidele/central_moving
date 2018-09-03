@@ -51,10 +51,10 @@
 
 .case_study_stat {
   @include statbox;
+
   margin-top: -53px;
   margin-left: $gutter;
   margin-right: $gutter;
-
 }
 
 .case_study_nav {

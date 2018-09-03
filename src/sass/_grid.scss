@@ -27,6 +27,10 @@ $max-width: 1400px;
   align-items: center;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 [class^="col"] {
   //flex-grow: 1;
   //width: 100%;
