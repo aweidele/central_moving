@@ -17,7 +17,11 @@
   if( !$redirect && $firstURL ) {
     $redirect = $firstURL;
   } else if( !$firstURL ) {
-    echo "Nothing assigned";
+    $redirect = get_field('indexes', 'option')["case_studies"];
   }
 
-  header("Location: ".$redirect);
+  if($redirect) {
+    header("Location: ".$redirect);
+  } else {
+    header("Location: ".get_home_url());
+  }

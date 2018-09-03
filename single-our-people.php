@@ -27,12 +27,13 @@
   $nextBio = get_permalink($allBios[$next]->ID);
   $prevBio = get_permalink($allBios[$prev]->ID);
 
-  $about = get_permalink(34);
+  $about = get_field('indexes', 'option')["about"];
 
   if( have_posts() ) : while( have_posts() ) : the_post();
     $fields = get_fields();
     $thumbnail = get_the_post_thumbnail($post->ID, "bio_thumb");
 ?>
+<pre><?php print_r($about); ?></pre>
   <main class="main our_people_main" itemscope itemtype="http://schema.org/Person">
     <div class="row">
       <div class="col_sm_1 col_md_2 col_lg_7 col_xl_6 push_xl_1">

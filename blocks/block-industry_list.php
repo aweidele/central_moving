@@ -21,7 +21,7 @@
          <?php foreach($terms as $term) { ?>
           <li><a href="<?=get_term_link($term->term_id, "industry") ?>"><?=$term->name?></a></li>
           <?php } ?>
-          <li><a href="">View All</a></li>
+          <li><a href="<?=get_field('indexes', 'option')["case_studies"];?>">View All</a></li>
        </ul>
      </div>
    </div>
