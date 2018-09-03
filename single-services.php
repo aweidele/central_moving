@@ -1,5 +1,4 @@
 <?php
-/* Template Name: Services */
 get_header();
 $services = get_posts([
   "post_type" => "services",
@@ -48,9 +47,9 @@ if( have_posts() ): while( have_posts() ): the_post();
       <div class="col_11 col_lg_4 col_xl_3">
         <nav class="services_nav">
           <ul>
-            <li class="active"><a href=""><span>Our Services</span></a></li>
+            <li><a href=""><span>Our Services</span></a></li>
             <?php foreach($services as $service) { ?>
-            <li><a href="<?=get_permalink($service->ID)?>"><span><?=$service->post_title?></span></a></li>
+            <li<?php if( $service->ID == $post->ID ) { echo ' class="active"'; } ?>><a href="<?=get_permalink($service->ID)?>"><span><?=$service->post_title?></span></a></li>
             <?php } ?>
           </ul>
         </nav>

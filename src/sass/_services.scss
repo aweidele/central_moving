@@ -113,5 +113,13 @@
         }
       }
     }
+
+    &.active {
+
+      a {
+        color: $white;
+        background: $red;
+      }
+    }
   }
 }

@@ -1970,6 +1970,11 @@ button {
   color: #FFFFFF;
 }
 
+.services_nav li.active a {
+  color: #FFFFFF;
+  background: #C20000;
+}
+
 /*
  *  Owl Carousel - Core
  */

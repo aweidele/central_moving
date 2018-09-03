@@ -77,6 +77,13 @@
                 "operator": "!=",
                 "value": "template_fullwidth.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
         ]
     ],
     "menu_order": 0,
@@ -89,5 +96,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1535307942
+    "modified": 1535997651
 }
