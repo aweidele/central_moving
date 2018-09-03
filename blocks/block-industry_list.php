@@ -19,7 +19,7 @@
      <div class="col_md_4 col_lg_9 push_xl_1">
        <ul class="industry_terms">
          <?php foreach($terms as $term) { ?>
-          <li><a href=""><?=$term->name?></a></li>
+          <li><a href="<?=get_term_link($term->term_id, "industry") ?>"><?=$term->name?></a></li>
           <?php } ?>
           <li><a href="">View All</a></li>
        </ul>

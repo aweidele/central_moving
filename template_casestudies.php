@@ -39,7 +39,7 @@
         <?php the_content(); ?>
         <ul class="main_content_terms">
           <?php foreach($terms as $term) { ?>
-           <li><a href=""><?=$term->name?></a></li>
+           <li><a href="<?=get_term_link($term->term_id, "industry") ?>"><?=$term->name?></a></li>
            <?php } ?>
         </ul>
       </div>
