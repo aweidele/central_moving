@@ -1617,6 +1617,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 75px;
 }
 
 @media screen and (min-width: 426px) {

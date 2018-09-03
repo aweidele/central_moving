@@ -59,7 +59,7 @@
       <div class="case_studies_list case_studies_list_right">
         <?php
           //foreach($caseStudies as $i => $case_study) {
-          for ($j = $i; $j < sizeof($caseStudies); $j++) {
+          for ($j = $i + 1; $j < sizeof($caseStudies); $j++) {
             cs_block($caseStudies[$j], $csThumbnails[$j]);
           } ?>
       </div>

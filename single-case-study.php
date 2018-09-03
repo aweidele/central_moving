@@ -1,5 +1,33 @@
 <?php
   get_header();
+
+  // Determine next and previous links
+  $allCS = get_posts([
+    "post_type" => "case-study",
+    "orderby" => "menu_order",
+    "posts_per_page" => -1
+  ]);
+  $thisCS = $post->ID;
+  foreach( $allCS as $i => $cs ) {
+    if($cs->ID == $thisCS) {
+      break;
+    }
+  }
+
+  $totalCS = sizeof($allCS) - 1;
+  $prev = $i - 1;
+  $next = $i + 1;
+
+  if( $prev < 0 ) {
+    $prev = $totalCS;
+  } else if( $next > $totalCS) {
+    $next = 0;
+  }
+
+  $nextCS = get_permalink($allCS[$next]->ID);
+  $prevCS = get_permalink($allCS[$prev]->ID);
+
+
   if( have_posts() ) : while( have_posts() ) : the_post();
   $fields = get_fields();
   $terms = wp_get_post_terms($post->ID, "industry");
@@ -32,19 +60,22 @@
               </figure></a>
             <?php } ?>
           </aside>
+          <?php if($fields["stat_description"]) { ?>
           <aside class="case_study_stat">
             <p>
               <span class="stat_figure"><?=$fields["stat_figure"]?></span>
               <span class="stat_description"><?=$fields["stat_description"]?></span>
             </p>
           </aside>
+          <?php } ?>
           <nav class="case_study_nav">
-            <a href="">Prev</a>
-            <a href="">Next</a>
+            <a href="<?=$prevCS?>">Prev</a>
+            <a href="<?=$nextCS?>">Next</a>
           </nav>
         </div>
       </div>
     </div>
+    <?php if($fields["client_list"]) { ?>
     <section class="client_list">
       <div class="row">
         <div class="col_xl_9 push_xl_1">
@@ -65,6 +96,7 @@
         </div>
       </div>
     </section>
+    <?php } ?>
     <?php cm_blocks($fields["blocks"]); ?>
   </main>
 <?php
