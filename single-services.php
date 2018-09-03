@@ -6,6 +6,27 @@ $services = get_posts([
   "posts_per_page" => -1
 ]);
 
+// Determine prev/next
+$thisService = $post->ID;
+foreach( $services as $i => $service) {
+  if($service->ID == $thisService) {
+    break;
+  }
+}
+
+$totalServices = sizeof($services) - 1;
+$prev = $i - 1;
+$next = $i + 1;
+
+if( $prev < 0 ) {
+  $prev = $totalServices;
+} else if( $next > $totalServices) {
+  $next = 0;
+}
+
+$nextService = get_permalink($services[$next]->ID);
+$prevService = get_permalink($services[$prev]->ID);
+
 if( have_posts() ): while( have_posts() ): the_post();
   $fields = get_fields();
   $hero = $fields["hero_image"];
@@ -31,16 +52,20 @@ if( have_posts() ): while( have_posts() ): the_post();
                 <img src="<?=$image["sizes"]["grid-image-368"]?>" alt="<?=$image["alt"]?>">
               </figure>
               <?php } ?>
-              <?php if($fields["stat_box"]["stat_description"]) { ?>
-              <aside class="services_stat">
-                <p>
-                  <span class="stat_figure"><?=$fields["stat_box"]["stat_figure"]?></span>
-                  <span class="stat_description"><?=$fields["stat_box"]["stat_description"]?></span>
-                </p>
-              </aside>
-              <?php } ?>
             </aside>
             <?php } ?>
+            <?php if($fields["stat_box"]["stat_description"]) { ?>
+            <aside class="services_stat">
+              <p>
+                <span class="stat_figure"><?=$fields["stat_box"]["stat_figure"]?></span>
+                <span class="stat_description"><?=$fields["stat_box"]["stat_description"]?></span>
+              </p>
+            </aside>
+            <?php } ?>
+            <nav class="services_nextprev">
+              <a href="<?=$prevService?>">Prev</a>
+              <a href="<?=$nextService?>">Next</a>
+            </nav>
           </div>
         </div>
       </div>

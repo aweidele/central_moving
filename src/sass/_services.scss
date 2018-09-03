@@ -26,7 +26,7 @@
   }
 
   .services_content {
-    padding-right: $gutter * 2;
+    padding-right: $gutter * 3;
   }
 }
 
@@ -37,12 +37,25 @@
 }
 
 .services_figure {
+    img {
+    max-width: 443px;
+  }
 }
 
 .services_stat {
-  @include statbox;
+  @include statbox_rv;
   position: relative;
   z-index: 0;
+
+  .services_images + & {
+    margin: -40px 0 0 -50px;
+  }
+}
+
+.services_nextprev {
+  @include nextprev;
+  margin-top: 28px;
+  text-align: center;
 }
 
 
@@ -82,7 +95,7 @@
       z-index: 0;
 
       content: "";
-      background: $red_dk;
+      background: $red;
       opacity: 0;
       transform: translateX(-100%);
       transition: all $speed;
