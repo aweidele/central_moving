@@ -2,13 +2,24 @@
 .case_studies_grid {}
 
 .case_studies_list {
+  margin: 75px 0;
+  &.case_studies_list_right {
+    transform: translateX($gutter * -1);
 
+    @media #{$maxMD} {
+      margin-top: 0;
+      transform: translateX(0);
+    }
+  }
 }
 
 .case_study {
-  width: calc(100% + #{$gutter});
   line-height: 1.4em;
   margin-bottom: 40px;
+
+  @media #{$minLG} {
+    width: calc(100% + #{$gutter});
+  }
 
   a {
     display: block;

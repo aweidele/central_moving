@@ -11,9 +11,11 @@
 
   $csThumbnails = [];
   $csHeight = 0;
-  foreach($caseStudies as $case_study) {
+  foreach($caseStudies as $i => $case_study) {
     $csThumbnails[] = wp_get_attachment_image_src( get_post_thumbnail_id( $case_study->ID ) , "case_study_listing" );
+    $csHeight += $csThumbnails[$i][2];
   }
+  $csBreak = $csHeight / 2;
 
   if( have_posts() ): while( have_posts() ): the_post();
   $fields = get_fields();
@@ -43,16 +45,22 @@
       </div>
       <div class="case_studies_list">
         <?php
-          foreach($caseStudies as $i => $case_study) {
+          $totalHeight = 0;
+          foreach( $caseStudies as $i => $case_study ) {
             cs_block($case_study, $csThumbnails[$i]);
+            $totalHeight += $csThumbnails[$i][2];
+            if($totalHeight > $csBreak) {
+              break;
+            }
           } ?>
       </div>
     </div>
     <div class="col_11 col_lg_5 col_xl_4 push_lg_1">
       <div class="case_studies_list case_studies_list_right">
         <?php
-          foreach($caseStudies as $i => $case_study) {
-            cs_block($case_study, $csThumbnails[$i]);
+          //foreach($caseStudies as $i => $case_study) {
+          for ($j = $i; $j < sizeof($caseStudies); $j++) {
+            cs_block($caseStudies[$j], $csThumbnails[$j]);
           } ?>
       </div>
     </div>
