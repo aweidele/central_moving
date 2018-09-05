@@ -1,4 +1,6 @@
-.services_main {}
+.services_main {
+  background: $gray_0;
+}
 
 .services_content_wrapper {
   padding: 45px 0;
@@ -70,6 +72,7 @@
     display: flex;
     align-items: center;
 
+    background: $white;
     border-bottom: 1px solid $gray_1;
     color: $black;
     overflow: hidden;

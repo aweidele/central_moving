@@ -1931,6 +1931,10 @@ button {
   grid-column-gap: 10px;
 }
 
+.services_main {
+  background: #F0F0F0;
+}
+
 .services_content_wrapper {
   padding: 45px 0;
 }
@@ -2051,6 +2055,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #FFFFFF;
   border-bottom: 1px solid #E0E0E0;
   color: #000000;
   overflow: hidden;
