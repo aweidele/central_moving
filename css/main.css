@@ -1482,6 +1482,29 @@ button {
   }
 }
 
+.text_and_image_two_col {
+  margin: 90px 0;
+}
+
+.text_and_image_two_col h2 {
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.text_and_image_two_col p {
+  font-size: 1.125rem;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.text_and_image_two_col img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .stat_box {
   position: relative;
 }

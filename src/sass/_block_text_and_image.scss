@@ -31,3 +31,20 @@
     transform: translateX(0) !important;
   }
 }
+
+
+.text_and_image_two_col {
+  margin: 90px 0;
+  
+  h2 {
+    @include h2;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  img {
+    @include img_block;
+  }
+}
