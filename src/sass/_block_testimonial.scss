@@ -1,5 +1,9 @@
 .testimonial {
-  @include followwhite;
+    @include followwhite;
+}
+
+.testimonial,
+.testimonial_in_content {
 
   h2 {
     @include h2;

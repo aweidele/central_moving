@@ -915,14 +915,16 @@ button {
   background: #FFFFFF;
 }
 
-.testimonial h2 {
+.testimonial h2,
+.testimonial_in_content h2 {
   font-weight: 300;
   font-size: 1.875rem;
   line-height: 1.2em;
   margin-bottom: 0.8em;
 }
 
-.testimonial blockquote {
+.testimonial blockquote,
+.testimonial_in_content blockquote {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.2em;
@@ -930,12 +932,14 @@ button {
 }
 
 @media screen and (min-width: 769px) {
-  .testimonial blockquote {
+  .testimonial blockquote,
+  .testimonial_in_content blockquote {
     padding-right: 20px;
   }
 }
 
-.testimonial cite {
+.testimonial cite,
+.testimonial_in_content cite {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.2em;
@@ -944,12 +948,14 @@ button {
   font-style: normal;
 }
 
-.testimonial cite:before {
+.testimonial cite:before,
+.testimonial_in_content cite:before {
   content: "—";
   display: inline-block;
 }
 
-.testimonial .testimonial_cta {
+.testimonial .testimonial_cta,
+.testimonial_in_content .testimonial_cta {
   font-weight: 300;
   letter-spacing: 0.001em;
   border: 2px solid #C20000;
@@ -963,7 +969,8 @@ button {
   color: #C20000;
 }
 
-.testimonial .testimonial_cta:hover {
+.testimonial .testimonial_cta:hover,
+.testimonial_in_content .testimonial_cta:hover {
   background: #C20000;
   color: #FFFFFF;
 }
