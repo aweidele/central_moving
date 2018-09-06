@@ -7,7 +7,7 @@ function sc_industry_list( $atts ) {
 
   $output = '        <ul class="main_content_terms">'."\n";
   foreach( $terms as $term ) {
-    $output .= '          <li><a href="<' . get_term_link($term->term_id, "industry") . '">'. $term->name . '</a></li>'."\n";
+    $output .= '          <li><a href="' . get_term_link($term->term_id, "industry") . '">'. $term->name . '</a></li>'."\n";
   }
   $output .= '        </ul>'."\n";
 
