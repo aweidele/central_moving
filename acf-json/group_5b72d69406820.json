@@ -767,6 +767,56 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b907ba20664c": {
+                    "key": "5b907ba20664c",
+                    "name": "multicolumn_list",
+                    "label": "Multicolumn List",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b907bb30664d",
+                            "label": "List",
+                            "name": "list",
+                            "type": "textarea",
+                            "instructions": "One list item per line",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 12,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5b907be60664e",
+                            "label": "Number of Columns",
+                            "name": "columns",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 3,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 2,
+                            "max": 4,
+                            "step": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -798,5 +848,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1536193581
+    "modified": 1536195589
 }
