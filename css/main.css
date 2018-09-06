@@ -968,6 +968,10 @@ button {
   color: #FFFFFF;
 }
 
+.testimonial_item {
+  background: #F0F0F0;
+}
+
 .industry_list {
   background: #F0F0F0;
   padding: 45px 0;

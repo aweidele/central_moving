@@ -42,10 +42,10 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5b72d73cbb408",
-                            "label": "Testimonial",
-                            "name": "testimonial",
-                            "type": "textarea",
+                            "key": "field_5b9061ebf1f0a",
+                            "label": "Testimonials",
+                            "name": "testimonials",
+                            "type": "repeater",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -54,30 +54,51 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": ""
-                        },
-                        {
-                            "key": "field_5b72d74ebb409",
-                            "label": "Attribution",
-                            "name": "attribution",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add Testimonial",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b90621df1f0b",
+                                    "label": "Testimonial",
+                                    "name": "testimonial",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_5b90624ef1f0c",
+                                    "label": "Attribution",
+                                    "name": "attribution",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
                         },
                         {
                             "key": "field_5b72d759bb40a",
@@ -93,6 +114,27 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_5b9073acaa3a1",
+                            "label": "Speed",
+                            "name": "speed",
+                            "type": "number",
+                            "instructions": "(Milliseconds)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 5000,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
                         }
                     ],
                     "min": "",
@@ -756,5 +798,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1536148747
+    "modified": 1536193581
 }
