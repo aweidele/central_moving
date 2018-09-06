@@ -22,11 +22,6 @@
   $hero = $fields["hero_image"];
 
   include("blocks/block-hero.php");
-
-  $terms = get_terms([
-      'taxonomy' => "industry",
-      'hide_empty' => false,
-  ]);
 ?>
 <main class="main case_study_main">
   <div class="row">
@@ -37,11 +32,7 @@
         <p class="intro_text"><?=$fields["intro_text"]?></p>
         <?php } ?>
         <?php the_content(); ?>
-        <ul class="main_content_terms">
-          <?php foreach($terms as $term) { ?>
-           <li><a href="<?=get_term_link($term->term_id, "industry") ?>"><?=$term->name?></a></li>
-           <?php } ?>
-        </ul>
+        <?php echo do_shortcode("[industry_list]"); ?>
       </div>
       <div class="case_studies_list">
         <?php

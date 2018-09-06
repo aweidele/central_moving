@@ -63,6 +63,9 @@ require_once("inc/menu/CM_Walker.php");
 // Post Types
 require_once("inc/post-types/post-types.php");
 
+// Shortcodes
+require_once("inc/shortcodes/shortcodes.php");
+
 // Add Options Page
 $args = [
 	'page_title' => 'Global Content'
