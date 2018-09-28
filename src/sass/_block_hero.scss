@@ -63,6 +63,7 @@
 
 .hero_cta {
   @include btn_reverse;
+  @include fw_reg;
 
   @media #{$minLG} {
     position: relative;
