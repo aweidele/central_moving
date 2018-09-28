@@ -6,7 +6,7 @@
  ?>
  <section class="industry_list">
    <header>
-     <div class="row align_center">
+     <div class="row align_end">
        <div class="col_md_4 col_lg_3 push_xl_1">
          <h2 class="industry_list_heading"><?=$block["heading"]?></h2>
        </div>

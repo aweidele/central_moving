@@ -27,6 +27,10 @@ $max-width: 1400px;
   align-items: center;
 }
 
+.align_end {
+  align-items: flex-end;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
