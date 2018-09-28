@@ -1479,7 +1479,7 @@ button {
 }
 
 .text_and_image figure {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .text_and_image img {
@@ -1492,6 +1492,7 @@ button {
   font-size: 1.125rem;
   line-height: 1.2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .text_and_image strong {
