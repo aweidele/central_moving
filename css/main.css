@@ -869,7 +869,6 @@ button {
 
 @media screen and (min-width: 1025px) {
   .hero_copy {
-    left: -20px;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     font-size: 2.25rem;
@@ -900,7 +899,6 @@ button {
 @media screen and (min-width: 1025px) {
   .hero_cta {
     position: relative;
-    left: -20px;
   }
 }
 
