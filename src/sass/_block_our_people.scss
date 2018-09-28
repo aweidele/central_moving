@@ -27,7 +27,7 @@
 .our_people_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: $gutter;
+  grid-gap: $gutter + 10 $gutter;
 
   @media #{$minMD} {
     grid-template-columns: 1fr 1fr 1fr;
