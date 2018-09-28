@@ -12,6 +12,14 @@
   }
 }
 
+.footer_logo {
+  @extend .header_logo;
+  @media #{$minLG} {
+    position: relative;
+    left: -53px;
+  }
+}
+
 .footer_top {
   &,p,h3,h4,h5,h6 {
     font-size: 16px;

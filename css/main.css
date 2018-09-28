@@ -382,12 +382,12 @@ button {
   top: 32px;
 }
 
-.header_logo {
+.header_logo, .footer_logo {
   font-size: 1rem;
   line-height: 1em;
 }
 
-.header_logo a {
+.header_logo a, .footer_logo a {
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,21 +398,21 @@ button {
   color: #FFFFFF;
 }
 
-.header_logo a:hover {
+.header_logo a:hover, .footer_logo a:hover {
   opacity: 0.7;
 }
 
-.header_logo svg {
+.header_logo svg, .footer_logo svg {
   width: 26px;
   height: 31px;
   margin-right: 7px;
 }
 
 @media screen and (min-width: 769px) {
-  .header_logo {
+  .header_logo, .footer_logo {
     font-size: 1.5rem;
   }
-  .header_logo svg {
+  .header_logo svg, .footer_logo svg {
     width: 36px;
     height: 42px;
     margin-right: 14px;
@@ -752,6 +752,13 @@ button {
 
 .footer a:hover {
   opacity: 0.6;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer_logo {
+    position: relative;
+    left: -53px;
+  }
 }
 
 .footer_top {
