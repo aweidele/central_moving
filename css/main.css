@@ -1432,7 +1432,6 @@ button {
   font-size: 1.125rem;
   line-height: 1.2em;
   margin-bottom: 1em;
-  text-align: center;
 }
 
 .our_people_grid {
@@ -1459,6 +1458,7 @@ button {
 
 .our_people_grid_info {
   max-width: 180px;
+  text-align: center;
 }
 
 .our_people_grid_info h3 {
