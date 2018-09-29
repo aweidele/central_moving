@@ -21,13 +21,14 @@
   margin-bottom: 60px;
   p {
     @include paragraph;
+    text-align: center;
   }
 }
 
 .our_people_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: $gutter + 10 $gutter;
+  grid-gap: $gutter * 2 $gutter;
 
   @media #{$minMD} {
     grid-template-columns: 1fr 1fr 1fr;
@@ -44,7 +45,7 @@
   h3 {
     font-size: 17px;
     @include fw_bold;
-    margin-top: 20px;
+    margin-top: $gutter / 2;
   }
 
   p {
