@@ -10,13 +10,12 @@
   ]);
 
   $csThumbnails = [];
-  $csList = [];
   $csHeight = 0;
   foreach($caseStudies as $i => $case_study) {
     $csThumbnails[] = wp_get_attachment_image_src( get_post_thumbnail_id( $case_study->ID ) , "case_study_listing" );
-    $position = get_field("position", $case_study->ID);
-    $csList[$position][] = $case_study;
+    $csHeight += $csThumbnails[$i][2];
   }
+  $csBreak = $csHeight / 2;
 
   if( have_posts() ): while( have_posts() ): the_post();
   $fields = get_fields();
@@ -38,8 +37,12 @@
       <div class="case_studies_list">
         <?php
           $totalHeight = 0;
-          foreach( $csList["left"] as $i => $case_study ) {
+          foreach( $caseStudies as $i => $case_study ) {
             cs_block($case_study, $csThumbnails[$i]);
+            $totalHeight += $csThumbnails[$i][2];
+            if($totalHeight > $csBreak) {
+              break;
+            }
           } ?>
       </div>
     </div>
@@ -47,8 +50,8 @@
       <div class="case_studies_list case_studies_list_right">
         <?php
           //foreach($caseStudies as $i => $case_study) {
-          foreach( $csList["right"] as $i => $case_study ) {
-            cs_block($case_study, $csThumbnails[$i]);
+          for ($j = $i + 1; $j < sizeof($caseStudies); $j++) {
+            cs_block($caseStudies[$j], $csThumbnails[$j]);
           } ?>
       </div>
     </div>
