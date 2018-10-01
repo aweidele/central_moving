@@ -837,6 +837,17 @@ button {
   }
 }
 
+.hero_item_sm {
+  position: relative;
+}
+
+@media screen and (min-width: 769px) {
+  .hero_item_sm {
+    max-height: 313px;
+    overflow: hidden;
+  }
+}
+
 .hero_image {
   position: relative;
   z-index: 0;
@@ -1512,6 +1523,7 @@ button {
 
 .text_and_image {
   margin: auto;
+  padding-bottom: 20px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1654,6 +1666,13 @@ button {
     -webkit-column-count: 4;
             column-count: 4;
   }
+}
+
+.featured_case_studies h2 {
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
 }
 
 .case_studies_list {

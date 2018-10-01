@@ -29,7 +29,7 @@
   </div>
 <?php } else { ?>
   <div class="hero">
-    <div class="hero_item">
+    <div class="hero_item_sm">
       <figure class="hero_image">
         <img src="<?=$hero["sizes"]["hero-image-sm"]; ?>">
       </figure>

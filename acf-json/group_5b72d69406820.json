@@ -547,8 +547,8 @@
                         },
                         {
                             "key": "field_5b7bffe9d514e",
-                            "label": "Featured Case Studies",
-                            "name": "featured_case_studies",
+                            "label": "Featured Case Studies Left",
+                            "name": "featured_case_studies_left",
                             "type": "relationship",
                             "instructions": "",
                             "required": 1,
@@ -567,6 +567,31 @@
                                 "featured_image"
                             ],
                             "min": 1,
+                            "max": "",
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_5bb174b0fa9c0",
+                            "label": "Featured Case Studies Right",
+                            "name": "featured_case_studies_right",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "case-study"
+                            ],
+                            "taxonomy": [],
+                            "filters": "",
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": "",
                             "max": "",
                             "return_format": "object"
                         },
@@ -848,5 +873,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1536195589
+    "modified": 1538356657
 }

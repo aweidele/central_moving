@@ -16,6 +16,14 @@
   }
 }
 
+.hero_item_sm {
+  position: relative;
+  @media #{$minMD} {
+    max-height: 313px;
+    overflow: hidden;
+  }
+}
+
 .hero_image {
   position: relative;
   z-index: 0;

@@ -1,5 +1,6 @@
 .text_and_image {
   margin: auto;
+  padding-bottom: $gutter;
 
   &.narrow {
     max-width: 381px;
