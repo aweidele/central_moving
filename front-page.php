@@ -3,7 +3,8 @@
   $fields = get_fields();
   $hero = $fields["homepage_hero"];
   $heroSpeed = $fields["homepage_hero_speed"];
-  $hero["mode"] = "carousel";
+  $carousel = true;
+  //$hero["mode"] = "carousel";
   include("blocks/block-hero.php");
 ?>
 
