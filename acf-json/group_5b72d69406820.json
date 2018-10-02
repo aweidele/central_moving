@@ -597,9 +597,9 @@
                         },
                         {
                             "key": "field_5b7c0016d514f",
-                            "label": "Link Label",
-                            "name": "link_label",
-                            "type": "text",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
@@ -608,11 +608,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Case Studies",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -873,5 +869,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1538356657
+    "modified": 1538446766
 }

@@ -51,6 +51,11 @@ $max-width: 1400px;
 @for $i from 0 through $columns - 1 {
   .push_#{$i} {
     margin-left: ($i / $columns) * 100%;
+
+    .reverse & {
+      margin-left: 0;
+      margin-right: ($i / $columns) * 100%;
+    }
   }
 }
 
@@ -65,6 +70,11 @@ $max-width: 1400px;
   @for $i from 0 through $columnsSM - 1 {
     .push_sm_#{$i} {
       margin-left: ($i / $columnsSM) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
     }
   }
 }
@@ -80,6 +90,11 @@ $max-width: 1400px;
   @for $i from 0 through $columnsMD - 1 {
     .push_md_#{$i} {
       margin-left: ($i / $columnsMD) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
     }
   }
 }
@@ -95,6 +110,11 @@ $max-width: 1400px;
   @for $i from 0 through $columns - 1 {
     .push_lg_#{$i} {
       margin-left: ($i / $columns) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
     }
   }
 }
@@ -110,6 +130,11 @@ $max-width: 1400px;
   @for $i from 0 through $columns - 1 {
     .push_xl_#{$i} {
       margin-left: ($i / $columns) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
     }
   }
 }

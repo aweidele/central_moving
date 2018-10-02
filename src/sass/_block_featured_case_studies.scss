@@ -3,4 +3,39 @@
   h2 {
     @include h2;
   }
+
+  .case_study {
+    width: 100%;
+  }
+}
+
+.featured_case_study_figure {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.featured_case_studies_link {
+  @include btn;
+
+  &:after {
+    content: ">";
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  @media #{$minMD} {
+    &.left {
+      @include visually_hide;
+    }
+  }
+
+  @media #{$maxMD} {
+    &.right {
+      display: none;
+    }
+  }
 }

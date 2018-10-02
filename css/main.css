@@ -128,44 +128,99 @@ a {
   margin-left: 0%;
 }
 
+.reverse .push_0 {
+  margin-left: 0;
+  margin-right: 0%;
+}
+
 .push_1 {
   margin-left: 9.09091%;
+}
+
+.reverse .push_1 {
+  margin-left: 0;
+  margin-right: 9.09091%;
 }
 
 .push_2 {
   margin-left: 18.18182%;
 }
 
+.reverse .push_2 {
+  margin-left: 0;
+  margin-right: 18.18182%;
+}
+
 .push_3 {
   margin-left: 27.27273%;
+}
+
+.reverse .push_3 {
+  margin-left: 0;
+  margin-right: 27.27273%;
 }
 
 .push_4 {
   margin-left: 36.36364%;
 }
 
+.reverse .push_4 {
+  margin-left: 0;
+  margin-right: 36.36364%;
+}
+
 .push_5 {
   margin-left: 45.45455%;
+}
+
+.reverse .push_5 {
+  margin-left: 0;
+  margin-right: 45.45455%;
 }
 
 .push_6 {
   margin-left: 54.54545%;
 }
 
+.reverse .push_6 {
+  margin-left: 0;
+  margin-right: 54.54545%;
+}
+
 .push_7 {
   margin-left: 63.63636%;
+}
+
+.reverse .push_7 {
+  margin-left: 0;
+  margin-right: 63.63636%;
 }
 
 .push_8 {
   margin-left: 72.72727%;
 }
 
+.reverse .push_8 {
+  margin-left: 0;
+  margin-right: 72.72727%;
+}
+
 .push_9 {
   margin-left: 81.81818%;
 }
 
+.reverse .push_9 {
+  margin-left: 0;
+  margin-right: 81.81818%;
+}
+
 .push_10 {
   margin-left: 90.90909%;
+}
+
+.reverse .push_10 {
+  margin-left: 0;
+  margin-right: 90.90909%;
 }
 
 /* Phone */
@@ -179,8 +234,16 @@ a {
   .push_sm_0 {
     margin-left: 0%;
   }
+  .reverse .push_sm_0 {
+    margin-left: 0;
+    margin-right: 0%;
+  }
   .push_sm_1 {
     margin-left: 50%;
+  }
+  .reverse .push_sm_1 {
+    margin-left: 0;
+    margin-right: 9.09091%;
   }
 }
 
@@ -201,14 +264,30 @@ a {
   .push_md_0 {
     margin-left: 0%;
   }
+  .reverse .push_md_0 {
+    margin-left: 0;
+    margin-right: 0%;
+  }
   .push_md_1 {
     margin-left: 25%;
+  }
+  .reverse .push_md_1 {
+    margin-left: 0;
+    margin-right: 9.09091%;
   }
   .push_md_2 {
     margin-left: 50%;
   }
+  .reverse .push_md_2 {
+    margin-left: 0;
+    margin-right: 18.18182%;
+  }
   .push_md_3 {
     margin-left: 75%;
+  }
+  .reverse .push_md_3 {
+    margin-left: 0;
+    margin-right: 27.27273%;
   }
 }
 
@@ -250,35 +329,79 @@ a {
   .push_lg_0 {
     margin-left: 0%;
   }
+  .reverse .push_lg_0 {
+    margin-left: 0;
+    margin-right: 0%;
+  }
   .push_lg_1 {
     margin-left: 9.09091%;
+  }
+  .reverse .push_lg_1 {
+    margin-left: 0;
+    margin-right: 9.09091%;
   }
   .push_lg_2 {
     margin-left: 18.18182%;
   }
+  .reverse .push_lg_2 {
+    margin-left: 0;
+    margin-right: 18.18182%;
+  }
   .push_lg_3 {
     margin-left: 27.27273%;
+  }
+  .reverse .push_lg_3 {
+    margin-left: 0;
+    margin-right: 27.27273%;
   }
   .push_lg_4 {
     margin-left: 36.36364%;
   }
+  .reverse .push_lg_4 {
+    margin-left: 0;
+    margin-right: 36.36364%;
+  }
   .push_lg_5 {
     margin-left: 45.45455%;
+  }
+  .reverse .push_lg_5 {
+    margin-left: 0;
+    margin-right: 45.45455%;
   }
   .push_lg_6 {
     margin-left: 54.54545%;
   }
+  .reverse .push_lg_6 {
+    margin-left: 0;
+    margin-right: 54.54545%;
+  }
   .push_lg_7 {
     margin-left: 63.63636%;
+  }
+  .reverse .push_lg_7 {
+    margin-left: 0;
+    margin-right: 63.63636%;
   }
   .push_lg_8 {
     margin-left: 72.72727%;
   }
+  .reverse .push_lg_8 {
+    margin-left: 0;
+    margin-right: 72.72727%;
+  }
   .push_lg_9 {
     margin-left: 81.81818%;
   }
+  .reverse .push_lg_9 {
+    margin-left: 0;
+    margin-right: 81.81818%;
+  }
   .push_lg_10 {
     margin-left: 90.90909%;
+  }
+  .reverse .push_lg_10 {
+    margin-left: 0;
+    margin-right: 90.90909%;
   }
 }
 
@@ -320,35 +443,79 @@ a {
   .push_xl_0 {
     margin-left: 0%;
   }
+  .reverse .push_xl_0 {
+    margin-left: 0;
+    margin-right: 0%;
+  }
   .push_xl_1 {
     margin-left: 9.09091%;
+  }
+  .reverse .push_xl_1 {
+    margin-left: 0;
+    margin-right: 9.09091%;
   }
   .push_xl_2 {
     margin-left: 18.18182%;
   }
+  .reverse .push_xl_2 {
+    margin-left: 0;
+    margin-right: 18.18182%;
+  }
   .push_xl_3 {
     margin-left: 27.27273%;
+  }
+  .reverse .push_xl_3 {
+    margin-left: 0;
+    margin-right: 27.27273%;
   }
   .push_xl_4 {
     margin-left: 36.36364%;
   }
+  .reverse .push_xl_4 {
+    margin-left: 0;
+    margin-right: 36.36364%;
+  }
   .push_xl_5 {
     margin-left: 45.45455%;
+  }
+  .reverse .push_xl_5 {
+    margin-left: 0;
+    margin-right: 45.45455%;
   }
   .push_xl_6 {
     margin-left: 54.54545%;
   }
+  .reverse .push_xl_6 {
+    margin-left: 0;
+    margin-right: 54.54545%;
+  }
   .push_xl_7 {
     margin-left: 63.63636%;
+  }
+  .reverse .push_xl_7 {
+    margin-left: 0;
+    margin-right: 63.63636%;
   }
   .push_xl_8 {
     margin-left: 72.72727%;
   }
+  .reverse .push_xl_8 {
+    margin-left: 0;
+    margin-right: 72.72727%;
+  }
   .push_xl_9 {
     margin-left: 81.81818%;
   }
+  .reverse .push_xl_9 {
+    margin-left: 0;
+    margin-right: 81.81818%;
+  }
   .push_xl_10 {
     margin-left: 90.90909%;
+  }
+  .reverse .push_xl_10 {
+    margin-left: 0;
+    margin-right: 90.90909%;
   }
 }
 
@@ -1343,7 +1510,7 @@ button {
   }
   .callout_grid_1 .callout_grid_header {
     bottom: 22%;
-    left: 50%;
+    left: 36%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
@@ -1677,6 +1844,61 @@ button {
   font-size: 1.875rem;
   line-height: 1.2em;
   margin-bottom: 0.8em;
+}
+
+.featured_case_studies .case_study {
+  width: 100%;
+}
+
+.featured_case_study_figure {
+  width: 100%;
+}
+
+.featured_case_study_figure img {
+  width: 100%;
+  height: auto;
+}
+
+.featured_case_studies_link {
+  font-weight: 300;
+  letter-spacing: 0.001em;
+  border: 2px solid #C20000;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  color: #C20000;
+}
+
+.featured_case_studies_link:hover {
+  background: #C20000;
+  color: #FFFFFF;
+}
+
+.featured_case_studies_link:after {
+  content: ">";
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .featured_case_studies_link.left {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featured_case_studies_link.right {
+    display: none;
+  }
 }
 
 .case_studies_list {
