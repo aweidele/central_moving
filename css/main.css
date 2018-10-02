@@ -1668,6 +1668,10 @@ button {
   }
 }
 
+.featured_case_studies {
+  margin: 75px 0;
+}
+
 .featured_case_studies h2 {
   font-weight: 300;
   font-size: 1.875rem;

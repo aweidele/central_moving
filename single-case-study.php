@@ -48,7 +48,7 @@
           <?=wpautop($fields["content"])?>
         </div>
         <div class="case_study_blurb">
-          <?=wpautop($fields["content"])?>
+          <?=wpautop($fields["blurb"])?>
         </div>
       </div>
       <div class="col_md_4 col_lg_5 col_xl_4 push_lg_1">
