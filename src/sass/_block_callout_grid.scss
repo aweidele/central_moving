@@ -120,7 +120,7 @@
 
   .callout_grid_1 {
     .callout_grid_inner {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: auto 1fr;
       grid-template-rows: auto auto auto;
       grid-template-areas:
         "photo1 intro"
