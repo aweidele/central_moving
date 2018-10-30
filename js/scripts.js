@@ -3465,4 +3465,13 @@
     var options = $(this).data("options");
     $(this).owlCarousel(options);
   });
+
+  $(window).load(function() {
+    // Check for hash in url
+    var hash = window.location.hash;
+    if( hash ) {
+      var scroll = $(window).scrollTop() - $("header.header").height();
+      $(window).scrollTop(scroll);
+    }
+  });
 })(jQuery);
