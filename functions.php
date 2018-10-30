@@ -6,6 +6,10 @@ function enqueue_styles() {
       get_stylesheet_directory_uri() . '/css/main.css'
   );
 
+  wp_enqueue_style( 'override_styles',
+      get_stylesheet_directory_uri() . '/css/override.css'
+  );
+
 	// wp_enqueue_script( 'main_script',
 	// 	get_stylesheet_directory_uri() . '/js/site.js',
 	// 	array('jquery'),
