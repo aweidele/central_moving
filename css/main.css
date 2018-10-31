@@ -550,7 +550,7 @@ button {
 }
 
 .header_logo, .footer_logo {
-  font-size: 1rem;
+  font-size: 1.3125rem;
   line-height: 1em;
 }
 
@@ -681,8 +681,14 @@ button {
 
 .main_nav_wrapper h2 {
   height: 70px;
-  font-size: 1.5rem;
+  font-size: 1.3125rem;
   padding: 20px 0;
+}
+
+@media screen and (min-width: 769px) {
+  .main_nav_wrapper h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .main_nav ul {
