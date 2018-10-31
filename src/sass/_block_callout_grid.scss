@@ -27,6 +27,10 @@
   font-size: 23px;
   line-height: 1.2em;
   margin-bottom: 0.2em;
+
+  @media #{$maxSM} {
+    @include visually_hide;
+  }
 }
 
 .callout_grid_intro {
@@ -106,8 +110,18 @@
 @media #{$maxSM} {
   .callout_grid_image_1,
   .callout_grid_image_2 {
-    width: 100%;
-    padding: 0;
+  }
+
+  .callout_grid_image {
+    &,
+    + .callout_grid_image {
+      width: 100%;
+      padding: 0;
+    }
+
+    .services_grid & {
+      margin-top: 0;
+    }
   }
 }
 
