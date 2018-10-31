@@ -77,7 +77,11 @@
 }
 
 .in_content_blocks {
-  margin: 75px 0;
+  margin: 30px 0;
+
+  @media #{$minMD} {
+    margin: 75px 0;
+  }
 
   > section {
     margin-bottom: $gutter * 4;

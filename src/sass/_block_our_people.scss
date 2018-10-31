@@ -1,7 +1,10 @@
 // Bio Listing
 .our_people {
   @include followwhite;
-  margin: 75px 0;
+
+  @media #{$minMD} {
+    margin: 75px 0;
+  }
 
   @media #{$minXL} {
     margin: 90px 0;
