@@ -33,7 +33,7 @@
         <div class="col">
           <h1 class="header_logo">
             <a href="<?php echo get_home_url(); ?>">
-              <svg viewBox="0 0 121.72 144"><use href="#site_logo"></use></svg>
+              <svg viewBox="0 0 121.72 144"><use xlink:href="#site_logo"></use></svg>
               <span class="header_logo_title">Central Moving & Storage</span>
             </a>
           </h1>

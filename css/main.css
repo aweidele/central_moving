@@ -1069,7 +1069,6 @@ button {
 }
 
 .hero_cta {
-  font-weight: 300;
   letter-spacing: 0.001em;
   border: 2px solid #C20000;
   display: inline-block;
@@ -1148,7 +1147,6 @@ button {
 
 .testimonial .testimonial_cta,
 .testimonial_in_content .testimonial_cta {
-  font-weight: 300;
   letter-spacing: 0.001em;
   border: 2px solid #C20000;
   display: inline-block;
@@ -1286,7 +1284,6 @@ button {
 }
 
 .callout_grid_cta a {
-  font-weight: 300;
   letter-spacing: 0.001em;
   border: 2px solid #C20000;
   display: inline-block;
@@ -1860,7 +1857,6 @@ button {
 }
 
 .featured_case_studies_link {
-  font-weight: 300;
   letter-spacing: 0.001em;
   border: 2px solid #C20000;
   display: inline-block;

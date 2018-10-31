@@ -25,7 +25,7 @@
 
 // Buttons
 @mixin btn_base($p: 1) {
-  @include fw_light;
+  //@include fw_reg;
   @include letterspace(1);
   border: 2px solid $red;
   display: inline-block;
