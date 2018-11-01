@@ -77,7 +77,11 @@
 }
 
 .in_content_blocks {
-  margin: 30px 0;
+  @media #{$maxMD} {
+    [class^="col"]:first-child > & {
+      margin: 30px 0 0;
+    }
+  }
 
   @media #{$minMD} {
     margin: 75px 0;

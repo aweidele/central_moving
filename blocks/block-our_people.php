@@ -37,11 +37,13 @@
 
         <?php } ?>
       </div>
+      <?php if( $additional_people ) { ?>
       <ul class="our_people_additional">
         <?php foreach($additional_people as $people) { ?>
         <li><?=$people?></li>
         <?php } ?>
       </ul>
+      <?php } ?>
     </div>
   </div>
 </section>

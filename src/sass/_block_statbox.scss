@@ -1,5 +1,5 @@
 .stat_box {
-  position: relative;
+  display: none;
 }
 
 .stat_box_content {
@@ -9,6 +9,8 @@
 
 @media #{$minMD} {
   .stat_box {
+    position: relative;
+    display: block;
     height: $gutter * 2;
   }
 
