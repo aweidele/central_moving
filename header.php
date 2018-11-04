@@ -45,7 +45,7 @@
               <div class="row flex-end">
                 <div class="col_sm_2 col_md_4 col_lg_7 col_xl_6">
                   <div class="main_nav_wrapper">
-                    <h2>Exceptional Service Since 1984</h2>
+                    <h2>Exceptional Service Since 1987</h2>
                     <nav class="main_nav">
                       <?php
                         wp_nav_menu(

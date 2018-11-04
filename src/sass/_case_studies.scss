@@ -94,10 +94,10 @@
   margin-bottom: 15px;
 
   @media #{$minSM} {
-    align-items: flex-end;
   }
 
   @media #{$minMD} {
+    align-items: flex-end;
     margin-bottom: 75px;
   }
 
