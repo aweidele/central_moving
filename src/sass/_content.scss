@@ -71,11 +71,12 @@
   li {
     // width: calc(50% - #{$gutter / 2});
     break-inside: avoid;
-    margin-bottom: (13 / 16) * 1em;
   }
 
   a{
-    white-space: nowrap;
+    display: block;
+    margin-bottom: (13 / 16) * 1em;
+    //white-space: nowrap;
     &:after {
       content: ">";
       display: inline-block;
