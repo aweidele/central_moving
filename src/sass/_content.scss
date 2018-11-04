@@ -58,20 +58,20 @@
 }
 
 .main_content_terms {
-  // column-count: 2;
-  // column-gap: $gutter;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  column-count: 2;
+  column-gap: $gutter;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 
   font-size: 16px;
   line-height: 1.2em;
   list-style: none;
 
   li {
-    width: calc(50% - #{$gutter / 2});
-    //break-inside: avoid;
-    margin-bottom: (13 / 16) * 1em;
+    // width: calc(50% - #{$gutter / 2});
+    break-inside: avoid;
+    //margin-bottom: (13 / 16) * 1em;
   }
 
   a:after {
