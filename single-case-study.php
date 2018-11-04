@@ -78,7 +78,7 @@
     <?php if($fields["client_list"]) { ?>
     <section class="client_list">
       <div class="row">
-        <div class="col_xl_9 push_xl_1">
+        <div class="col_11 col_xl_9 push_xl_1">
           <header>
             <h2><?php
               if($fields["client_list_title"]) {

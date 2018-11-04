@@ -98,7 +98,7 @@
 
   .callout_grid_image_1,
   .callout_grid_image_2 {
-    width: 50%;
+    //width: 50%;
   }
 
   .callout_grid_intro,
@@ -107,7 +107,7 @@
   }
 }
 
-@media #{$maxSM} {
+@media #{$maxSMw} {
   .callout_grid_image_1,
   .callout_grid_image_2 {
   }
@@ -320,6 +320,16 @@
 
     a {
       padding: 10px 0;
+    }
+  }
+
+  @media #{$mediaTablet} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      width: calc(50% - #{$gutter / 2});
     }
   }
 }

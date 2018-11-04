@@ -17,15 +17,21 @@ $light: 300;
 $normal: 400;
 $bold: 700;
 
-// Media Queries\
+// Media Queries
+$minXS: "screen and (min-width: 376px)";
 $minSM: "screen and (min-width: 426px)";
+$minSMw: "screen and (min-width: 668px)";
 $minMD: "screen and (min-width: 769px)";
 $minLG: "screen and (min-width: 1025px)";
 $minXL: "screen and (min-width: 1440px)";
 
+$maxXS: "screen and (max-width: 375px)";
 $maxSM: "screen and (max-width: 425px)";
+$maxSMw: "screen and (min-width: 667px)";
 $maxMD: "screen and (max-width: 768px)";
 $maxLG: "screen and (max-width: 1024px)";
 $maxXL: "screen and (max-width: 1439px)";
+
+$mediaTablet: $minSM "and (max-width: 768px)";
 
 $headerHeight: 70px;

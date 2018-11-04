@@ -36,6 +36,10 @@
 
 .services_images {
   position: relative;
+
+  @media #{$maxMD} {
+    display: none;
+  }
 }
 
 .services_figure {
@@ -62,6 +66,8 @@
 
 
 .services_nav {
+  margin: 0 -20px;
+
   ul {
     list-style: none;
   }
@@ -93,11 +99,6 @@
     color: $black;
     padding: 0 $gutter;
 
-    @media #{$minMD} {
-      box-sizing: content-box;
-      transform: translateX($gutter * -1);
-    }
-
     span {
       position: relative;
       z-index: 1;
@@ -120,7 +121,7 @@
     }
 
     &:hover {
-      
+
     }
   }
 
@@ -130,6 +131,14 @@
 
     &:after {
       background: $red;
+    }
+  }
+
+  @media #{$minMD} {
+    margin: 0;
+    a {
+      box-sizing: content-box;
+      transform: translateX($gutter * -1);
     }
   }
 
