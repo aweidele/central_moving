@@ -1353,7 +1353,7 @@ button {
 
 .callout_grid_image,
 .callout_grid_image img {
-  max-width: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1378,12 +1378,10 @@ button {
             justify-content: space-between;
   }
   .callout_grid_image {
-    padding-right: 10px;
     margin: 20px 0;
   }
   .callout_grid_image + .callout_grid_image {
     padding-right: 0;
-    padding-left: 10px;
   }
   .callout_grid_image img {
     width: 100%;
