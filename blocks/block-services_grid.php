@@ -28,7 +28,7 @@
             <?php } ?>
           </div>
           <div class="callout_grid_cta">
-            <a href="<?=get_field('indexes', 'option')["services"];?>"><?=$block["link_label"] ? $block["link_label"] : "Our Services"?></a>
+            <a href="<?=$block["link"]["url"]?>"><?=$block["link"]["title"] ? $block["link"]["title"] : "Our Services"?></a>
           </div>
         </div>
       </div>

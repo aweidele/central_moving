@@ -98,6 +98,10 @@
   dl {
     border-bottom: 1px solid $gray_1;
     padding: 10px 0;
+
+    &.our_people_contact {
+      border-bottom: 0;
+    }
   }
 
   dt,
@@ -131,8 +135,13 @@
   }
 }
 
+.our_people_contact_wrapper {
+  border-bottom: 1px solid $gray_1;
+}
+
 .our_people_contact {
   display: inline-grid;
   grid-template-columns: auto auto;
   grid-column-gap: 10px;
+  border: 0;
 }

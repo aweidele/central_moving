@@ -69,26 +69,28 @@
         <div class="our_people_info">
 
           <?php if($fields["email"] || $fields["main_phone"] || $fields["direct_phone"]) { ?>
-          <dl class="our_people_contact">
-            <?php if($fields["email"]) { ?>
+          <div class="our_people_contact_wrapper">
+            <dl class="our_people_contact">
+              <?php if($fields["email"]) { ?>
 
-            <dt>Email</dt>
-            <dd><a href="mailto:<?=$fields["email"]?>" itemprop="email"><?=$fields["email"]?></a></dd>
+              <dt>Email</dt>
+              <dd><a href="mailto:<?=$fields["email"]?>" itemprop="email"><?=$fields["email"]?></a></dd>
 
-            <?php }
-            if($fields["main_phone"]) { ?>
+              <?php }
+              if($fields["main_phone"]) { ?>
 
-            <dt>Main</dt>
-            <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["main_phone"])?>" itemprop="telephone"><?=$fields["main_phone"]?></a></dd>
+              <dt>Main</dt>
+              <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["main_phone"])?>" itemprop="telephone"><?=$fields["main_phone"]?></a></dd>
 
-            <?php }
-            if($fields["direct_phone"]) { ?>
+              <?php }
+              if($fields["direct_phone"]) { ?>
 
-            <dt>Direct</dt>
-            <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["direct_phone"])?>" itemprop="telephone"><?=$fields["direct_phone"]?></a></dd>
+              <dt>Direct</dt>
+              <dd><a href="tel:<?=str_replace(["(",")"," ","-"],"",$fields["direct_phone"])?>" itemprop="telephone"><?=$fields["direct_phone"]?></a></dd>
 
-            <?php } ?>
-          </dl>
+              <?php } ?>
+            </dl>
+          </div>
           <?php }
           if($fields["education"]) { ?>
 

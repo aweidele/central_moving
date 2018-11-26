@@ -2385,6 +2385,10 @@ button {
   padding: 10px 0;
 }
 
+.our_people_info dl.our_people_contact {
+  border-bottom: 0;
+}
+
 .our_people_info dt,
 .our_people_info dd,
 .our_people_info li {
@@ -2415,12 +2419,17 @@ button {
   padding-top: 10px;
 }
 
+.our_people_contact_wrapper {
+  border-bottom: 1px solid #E0E0E0;
+}
+
 .our_people_contact {
   display: -ms-inline-grid;
   display: inline-grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   grid-column-gap: 10px;
+  border: 0;
 }
 
 .services_main {
