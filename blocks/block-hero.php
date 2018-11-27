@@ -30,9 +30,11 @@
 <?php } else { ?>
   <div class="hero">
     <div class="hero_item_sm">
-      <figure class="hero_image">
-        <img src="<?=$hero["sizes"]["hero-image-sm"]; ?>">
-      </figure>
+      <div class="hero_item_sm_inner" data-background="<?=$hero["sizes"]["hero-image-sm"]; ?>">
+        <figure class="hero_image">
+          <img src="<?=$hero["sizes"]["hero-image-sm"]; ?>">
+        </figure>
+      </div>
     </div>
   </div>
 <?php } ?>

@@ -24,6 +24,20 @@
   }
 }
 
+.hero_item_sm_inner {
+  @media #{$minMD} {
+    &.bg {
+      padding-bottom: 27.77%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      figure {
+        @include visually_hide;
+      }
+    }
+  }
+}
+
 .hero_image {
   position: relative;
   z-index: 0;

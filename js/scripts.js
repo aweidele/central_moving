@@ -3466,6 +3466,15 @@
     $(this).owlCarousel(options);
   });
 
+  if( $(".hero_item_sm_inner").length ) {
+    $(".hero_item_sm_inner").each(function() {
+      var bg = $(this).data("background");
+      $(this)
+        .addClass("bg")
+        .css({"background-image":"url("+bg+")"});
+    });
+  }
+
   $(window).load(function() {
     // Check for hash in url
     var hash = window.location.hash;
