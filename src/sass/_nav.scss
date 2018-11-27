@@ -47,7 +47,7 @@
     }
   }
 
-  @media #{$minMD} {
+  @media #{$minLG} {
     width: $headerHeight;
 
     span,
@@ -96,7 +96,7 @@
     font-size: 21px;
     padding: 20px 0;
 
-    @media #{$minMD} {
+    @media #{$minLG} {
       font-size: 24px;
     }
   }
@@ -117,7 +117,7 @@
 
   .menu {
 
-    @media #{$minMD} {
+    @media #{$minLG} {
       column-count: 2;
     }
 
@@ -205,7 +205,7 @@
   }
 }
 
-@media #{$maxMD} {
+@media #{$maxLG} {
   .main_nav {
     .sub-menu {
       display: none;

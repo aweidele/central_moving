@@ -633,7 +633,7 @@ button {
           transform: translateY(0) rotate(-45deg);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .header_nav_button {
     width: 70px;
   }
@@ -685,7 +685,7 @@ button {
   padding: 20px 0;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .main_nav_wrapper h2 {
     font-size: 1.5rem;
   }
@@ -703,7 +703,7 @@ button {
   opacity: 0.6;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .main_nav .menu {
     -webkit-column-count: 2;
             column-count: 2;
@@ -801,7 +801,7 @@ button {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .main_nav .sub-menu {
     display: none;
   }
