@@ -25,15 +25,19 @@
 }
 
 .hero_item_sm_inner {
-  @media #{$minMD} {
-    &.bg {
-      padding-bottom: 27.77%;
+  &.bg {
+    @media #{$minMD} {
+      height:214px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       figure {
         @include visually_hide;
       }
+    }
+
+    @media #{$minLG} {
+      height: 313px;
     }
   }
 }

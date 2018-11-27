@@ -1036,7 +1036,7 @@ button {
 
 @media screen and (min-width: 769px) {
   .hero_item_sm_inner.bg {
-    padding-bottom: 27.77%;
+    height: 214px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1048,6 +1048,12 @@ button {
     overflow: hidden;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .hero_item_sm_inner.bg {
+    height: 313px;
   }
 }
 
