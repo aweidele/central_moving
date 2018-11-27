@@ -177,10 +177,5 @@
     break-inside: avoid;
     color: $gray_9;
     padding: 10px 0;
-
-    @media #{$maxMD} {
-      margin: 0 $gutter * -1;
-      padding: 10px $gutter;
-    }
   }
 }

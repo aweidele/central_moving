@@ -136,6 +136,30 @@
 
   @media #{$minMD} {
     margin: 0;
+    height: 100%;
+
+    ul {
+      height: 100%;
+      position: relative;
+
+      &:after {
+        width: 500%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        content: "";
+        background: $white;
+      }
+    }
+
+    li {
+      position: relative;
+      z-index: 1;
+    }
+
     a {
       box-sizing: content-box;
       transform: translateX($gutter * -1);

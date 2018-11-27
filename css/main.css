@@ -2250,13 +2250,6 @@ button {
   padding: 10px 0;
 }
 
-@media screen and (max-width: 768px) {
-  .client_list li {
-    margin: 0 -20px;
-    padding: 10px 20px;
-  }
-}
-
 .breadcrumb {
   font-size: 0.875rem;
   padding: 20px 0;
@@ -2628,6 +2621,24 @@ button {
 @media screen and (min-width: 769px) {
   .services_nav {
     margin: 0;
+    height: 100%;
+  }
+  .services_nav ul {
+    height: 100%;
+    position: relative;
+  }
+  .services_nav ul:after {
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    content: "";
+    background: #FFFFFF;
+  }
+  .services_nav li {
+    position: relative;
+    z-index: 1;
   }
   .services_nav a {
     -webkit-box-sizing: content-box;
