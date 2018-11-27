@@ -1685,7 +1685,7 @@ button {
   grid-gap: 40px 20px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 426px) {
   .our_people_grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;

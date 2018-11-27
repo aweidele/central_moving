@@ -32,13 +32,15 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: $gutter * 2 $gutter;
 
-  @media #{$minMD} {
+  @media #{$minSM} {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media #{$minLG} {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+
 
   .our_people_thumb {
     width: 100%;
