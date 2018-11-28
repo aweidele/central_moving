@@ -1,1 +1,7 @@
 /* Override Styles */
+.our_people_intro p {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+}
