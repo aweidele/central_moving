@@ -29,9 +29,9 @@ $prevService = get_permalink($services[$prev]->ID);
 
 if( have_posts() ): while( have_posts() ): the_post();
   $fields = get_fields();
-  $hero = $fields["hero_image"];
-
-  include("blocks/block-hero.php");
+  // $hero = $fields["hero_image"];
+  //
+  // include("blocks/block-hero.php");
 ?>
   <main class="main services_main">
     <div class="row reverse">
