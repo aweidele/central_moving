@@ -24,7 +24,7 @@
               include("blocks/block-".$block["acf_fc_layout"].".php");
             } ?>
           </div>
-          <div class="col_sm-2 col_md_4 col_lg_12">
+          <div class="col_sm-2 col_md_4 col_lg_4">
             <nav class="footer_nav">
               <?php wp_nav_menu( array('theme_location' => 'footer-menu') ); ?>
             </nav>
