@@ -1,0 +1,51 @@
+
+.header {
+  width: 100%;
+  height: $headerHeight;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: $red;
+  box-shadow: 0px 2px 2px rgba($black,0.1);
+
+  .loggedin & {
+    top: 32px;
+  }
+}
+
+.header_logo {
+  font-size: 21px;
+  line-height: 1em;
+
+  a {
+    height: $headerHeight;
+
+    display: flex;
+    align-items: center;
+
+    color: $white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  svg {
+    width: 26px;
+    height: 31px;
+    margin-right: 7px;
+  }
+
+  @media #{$minMD} {
+    font-size: 24px;
+
+    svg {
+      width: 36px;
+      height: 42px;
+      margin-right: 14px;
+    }
+  }
+}

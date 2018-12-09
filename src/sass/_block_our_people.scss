@@ -1,0 +1,96 @@
+// Bio Listing
+.our_people {
+  @include followwhite;
+
+  @media #{$minMD} {
+    margin: 75px 0;
+  }
+
+  @media #{$minXL} {
+    margin: 90px 0;
+    padding-bottom: 90px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.our_people_heading {
+  @include h2;
+}
+
+.our_people_description {
+  margin-bottom: 60px;
+  p {
+    @include paragraph;
+  }
+}
+
+.our_people_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $gutter * 2 $gutter;
+
+  @media #{$minSM} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media #{$minLG} {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+
+
+  .our_people_thumb {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+  }
+}
+
+.our_people_grid_info {
+  max-width: 180px;
+  text-align: center;
+
+  h3 {
+    font-size: 17px;
+    @include fw_bold;
+    margin-top: $gutter / 2;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.our_people_additional {
+  font-size: 17px;
+  line-height: 1.2em;
+  list-style: none;
+  padding-top: $gutter * 2;
+
+  @media #{$minSM} {
+    column-count: 2;
+    column-gap: $gutter;
+    padding-top: $gutter * 3;
+  }
+
+  @media #{$minLG} {
+    column-count: 3;
+    padding-top: $gutter * 4;
+  }
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 0.2em;
+  }
+}

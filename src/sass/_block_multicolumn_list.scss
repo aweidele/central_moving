@@ -1,0 +1,43 @@
+.multicolumn_list {
+  margin: 75px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    border-bottom: 1px solid $gray_1;
+    font-size: 16px;
+    line-height: 1.2em;
+    padding: 9px 0;
+  }
+}
+
+.multicolumn_list_list {
+  column-gap: $gutter;
+
+  li {
+    break-inside: avoid;
+  }
+}
+
+@media #{$minMD} {
+  .list_2_column,
+  .list_3_column,
+  .list_4_column {
+    column-count: 2;
+  }
+}
+@media #{$minLG} {
+  .list_3_column {
+    column-count: 3;
+  }
+
+  .list_4_column {
+    column-count: 4;
+  }
+}

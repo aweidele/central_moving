@@ -1,0 +1,169 @@
+.services_main {
+  background: $gray_0;
+}
+
+.services_content_wrapper {
+  padding: 45px 0;
+}
+
+.services_content {
+
+  h1 {
+    @include h1;
+    color: $red;
+  }
+
+  .intro_text {
+    @include h3;
+  }
+
+  p {
+    @include paragraph;
+  }
+}
+
+@media #{$minMD} {
+  .services_content_wrapper {
+    display: flex;
+  }
+
+  .services_content {
+    padding-right: $gutter * 3;
+  }
+}
+
+.services_right_rail {}
+
+.services_images {
+  position: relative;
+
+  @media #{$maxMD} {
+    display: none;
+  }
+}
+
+.services_figure {
+    img {
+    max-width: 443px;
+  }
+}
+
+.services_stat {
+  @include statbox_rv;
+  position: relative;
+  z-index: 0;
+
+  .services_images + & {
+    margin: -40px 0 0 -50px;
+  }
+}
+
+.services_nextprev {
+  @include nextprev;
+  margin-top: 28px;
+  text-align: center;
+}
+
+
+.services_nav {
+  margin: 0 -20px;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    font-size: 18px;
+
+    &:first-child {
+      @include h3;
+      margin: 0;
+
+      a {
+        color: $red;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  a {
+    height: 69px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    color: $black;
+    padding: 0 $gutter;
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+    &:after {
+      width: 500%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+
+      content: "";
+      background: $white;
+      border-bottom: 1px solid $gray_1;
+      box-sizing: border-box;
+      transition: all $speed;
+    }
+
+    &:hover {
+
+    }
+  }
+
+  li.active a,
+  a:hover {
+    color: $white;
+
+    &:after {
+      background: $red;
+    }
+  }
+
+  @media #{$minMD} {
+    margin: 0;
+    height: 100%;
+
+    ul {
+      height: 100%;
+      position: relative;
+
+      &:after {
+        width: 500%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        content: "";
+        background: $white;
+      }
+    }
+
+    li {
+      position: relative;
+      z-index: 1;
+    }
+
+    a {
+      box-sizing: content-box;
+      transform: translateX($gutter * -1);
+    }
+  }
+
+}

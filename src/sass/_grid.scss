@@ -1,0 +1,142 @@
+/* GRID */
+$columns: 11;
+$columnsMD: 4;
+$columnsSM: 2;
+$gutter: 20px;
+$max-width: 1400px;
+
+.row {
+  max-width: $max-width;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: auto;
+  padding: 0 $gutter / 2;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.align_end {
+  align-items: flex-end;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+[class^="col"] {
+  //flex-grow: 1;
+  //width: 100%;
+  padding: 0 $gutter / 2;
+}
+
+/* General */
+@for $i from 1 through $columns {
+  .col_#{$i} {
+    width: ($i / $columns) * 100%;
+  }
+}
+
+@for $i from 0 through $columns - 1 {
+  .push_#{$i} {
+    margin-left: ($i / $columns) * 100%;
+
+    .reverse & {
+      margin-left: 0;
+      margin-right: ($i / $columns) * 100%;
+    }
+  }
+}
+
+/* Phone */
+@media #{$maxSM} {
+  @for $i from 1 through $columnsSM {
+    .col_sm_#{$i} {
+      width: ($i / $columnsSM) * 100%;
+    }
+  }
+
+  @for $i from 0 through $columnsSM - 1 {
+    .push_sm_#{$i} {
+      margin-left: ($i / $columnsSM) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
+    }
+  }
+}
+
+/* Tablet */
+@media #{$minSM} {
+  @for $i from 1 through $columnsMD {
+    .col_md_#{$i} {
+      width: ($i / $columnsMD) * 100%;
+    }
+  }
+
+  @for $i from 0 through $columnsMD - 1 {
+    .push_md_#{$i} {
+      margin-left: ($i / $columnsMD) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
+    }
+  }
+}
+
+/* Laptop */
+@media #{$minMD} {
+  @for $i from 1 through $columns {
+    .col_lg_#{$i} {
+      width: ($i / $columns) * 100%;
+    }
+  }
+
+  @for $i from 0 through $columns - 1 {
+    .push_lg_#{$i} {
+      margin-left: ($i / $columns) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media #{$minLG} {
+  @for $i from 1 through $columns {
+    .col_xl_#{$i} {
+      width: ($i / $columns) * 100%;
+    }
+  }
+
+  @for $i from 0 through $columns - 1 {
+    .push_xl_#{$i} {
+      margin-left: ($i / $columns) * 100%;
+
+      .reverse & {
+        margin-left: 0;
+        margin-right: ($i / $columns) * 100%;
+      }
+    }
+  }
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout

@@ -1,0 +1,160 @@
+@mixin visually_hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin clearfix {
+  &:after {
+    height: 0;
+
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+@mixin img_block {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Buttons
+@mixin btn_base($p: 1) {
+  //@include fw_reg;
+  @include letterspace(1);
+  border: 2px solid $red;
+  display: inline-block;
+  font-size: 18px;
+  padding: 14px $gutter * $p;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3;
+}
+
+@mixin btn($p: 1)  {
+  @include btn_base($p);
+  color: $red;
+
+  &:hover {
+    background: $red;
+    color: $white;
+  }
+}
+
+@mixin btn_reverse($p: 1) {
+  @include btn_base($p);
+  background: rgba($red,0.9);
+  color: $white;
+
+  &:hover {
+    background: $white;
+    border: 2px solid $white;
+    color: $red;
+  }
+}
+
+// Statbox
+@mixin statbox_base {
+  width: 190px;
+  height: 190px;
+
+  border: 5px solid $red;
+  padding: 10px;
+}
+
+@mixin statbox_figure {
+  @include fw_light;
+  display: block;
+  font-size: 36px;
+  margin-bottom: (16 / 36) * 1em;
+}
+
+@mixin statbox_description {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+@mixin statbox {
+  @include statbox_base;
+
+  .stat_figure {
+    @include statbox_figure;
+    color: $red;
+  }
+
+  .stat_description {
+    @include statbox_description;
+  }
+}
+
+@mixin statbox_rv {
+  @include statbox_base;
+  background: $red;
+  color: $white;
+
+  .stat_figure {
+    @include statbox_figure;
+  }
+
+  .stat_description {
+    @include statbox_description;
+  }
+}
+
+@mixin nextprev {
+  font-size: 14px;
+
+  a {
+    color: $gray_3;
+    display: inline-block;
+    line-height: 1.2em;
+
+    &:before,
+    &:after {
+      display: inline-block;
+    }
+
+    &:first-child {
+      &:before {
+        content: "<";
+        padding-right: 2px;
+      }
+      &:after {
+        content: "|";
+        padding-left: 5px;
+        padding-right: 3px;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        content: ">";
+        padding-left: 2px;
+      }
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+@mixin followwhite {
+  background: $gray_0;
+  padding: 30px 0;
+
+  @media #{$minMD} {
+    padding: 45px 0;
+  }
+
+  .our_people + & ,
+  .testimonial + & ,
+  .industry_list+ &  {
+    background: $white;
+  }
+}

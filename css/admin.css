@@ -1,0 +1,9 @@
+.acf-flexible-content .layout .acf-fc-layout-handle {
+  background: #333;
+  color: #FFF !important;
+}
+
+.acf-flexible-content .layout {
+  //border: 2px solid #333 !important;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}

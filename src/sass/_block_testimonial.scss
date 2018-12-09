@@ -1,0 +1,34 @@
+.testimonial {
+    @include followwhite;
+}
+
+.testimonial,
+.testimonial_in_content {
+
+  h2 {
+    @include h2;
+  }
+
+  blockquote {
+    @include quote;
+    @media #{$minMD} {
+      padding-right: $gutter;
+    }
+  }
+
+  cite {
+    @include cite;
+  }
+
+  .testimonial_cta {
+    @include btn(2);
+  }
+}
+
+.testimonial_in_content {
+  margin-bottom: 40px;
+}
+
+.testimonial_item {
+  background: $gray_0;
+}

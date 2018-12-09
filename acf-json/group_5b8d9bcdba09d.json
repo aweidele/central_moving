@@ -1,0 +1,43 @@
+{
+    "key": "group_5b8d9bcdba09d",
+    "title": "Case Studies Sidebar",
+    "fields": [
+        {
+            "key": "field_5b8d9bf86f08c",
+            "label": "Primary Industy Link",
+            "name": "primary_typology_link",
+            "type": "true_false",
+            "instructions": "If there are multiple Case Studies per industry, make this Case Study the primary link for that industry.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "case-study"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1536007229
+}
