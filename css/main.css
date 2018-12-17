@@ -1012,15 +1012,26 @@ button {
   padding-top: 70px;
 }
 
-.hero_item {
-  position: relative;
+.hero_carousel {
+  height: 100vh;
 }
 
-@media screen and (min-width: 769px) {
-  .hero_item {
-    max-height: 600px;
-    overflow: hidden;
-  }
+.hero_carousel .hero,
+.hero_carousel .hero .owl-stage-outer,
+.hero_carousel .hero .owl-stage,
+.hero_carousel .hero .owl-item,
+.hero_carousel .hero .hero_item,
+.hero_carousel .hero .hero_image {
+  height: 100%;
+}
+
+.hero_carousel .owl-carousel .owl-item img {
+  height: 100%;
+  width: auto;
+}
+
+.hero_item {
+  position: relative;
 }
 
 .hero_item_sm {

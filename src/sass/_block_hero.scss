@@ -4,16 +4,28 @@
   padding-top: $headerHeight;
 }
 
-.hero {
+.hero_carousel {
+  height: 100vh;
 
+  .hero {
+    &,
+    .owl-stage-outer,
+    .owl-stage,
+    .owl-item,
+    .hero_item,
+    .hero_image {
+      height: 100%;
+    }
+  }
+
+  .owl-carousel .owl-item img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .hero_item {
   position: relative;
-  @media #{$minMD} {
-    max-height: 600px;
-    overflow: hidden;
-  }
 }
 
 .hero_item_sm {

@@ -1,4 +1,4 @@
-<div class="hero_wrapper">
+<div class="hero_wrapper<?php if( $carousel ) { ?> hero_carousel<?php } ?>">
   <?php if( $carousel ) { ?>
   <div class="hero owl-carousel" data-options='{"items":1,"dots":false,"loop":true,"autoplay":true,"autoplayTimeout":<?=$heroSpeed?>}'>
     <?php
