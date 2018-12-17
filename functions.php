@@ -79,7 +79,7 @@ acf_add_options_page($args);
 
 // Blocks
 function cm_blocks($blocks) {
-  if( sizeof($blocks) ) {
+  if( $blocks ) {
     echo '<div class="full_width_blocks">'."\n";
     foreach($blocks as $block) {
       include("blocks/block-".$block["acf_fc_layout"].".php");
