@@ -69,6 +69,7 @@
           </aside>
           <?php } ?>
           <nav class="case_study_nav">
+            <a href="/case-studies" class="back">Back to Case Studies</a>
             <a href="<?=$prevCS?>">Prev</a>
             <a href="<?=$nextCS?>">Next</a>
           </nav>

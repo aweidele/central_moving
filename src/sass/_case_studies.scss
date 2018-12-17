@@ -129,7 +129,16 @@
 
 .case_study_nav {
   @include nextprev;
+  width: 100%;
+  display: flex;
   margin: 27px 0;
+
+  .back {
+    flex-grow: 1;
+    &:after {
+      content: "";
+    }
+  }
 }
 
 @media #{$minMD} {
