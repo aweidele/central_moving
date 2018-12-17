@@ -1079,19 +1079,12 @@ button {
   display: block;
 }
 
-.hero_content {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 150px;
-  margin: 0;
-}
-
 .hero_scroll {
   width: 100%;
   position: absolute;
-  bottom: 50px;
+  bottom: 25px;
   z-index: 2;
+  font-size: 0.875rem;
   display: block;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1115,9 +1108,33 @@ button {
 }
 
 .hero_scroll svg {
-  width: 100px;
+  width: 80px;
   fill: currentColor;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .hero_scroll {
+    bottom: 50px;
+    font-size: 1rem;
+  }
+  .hero_scroll svg {
+    width: 100px;
+  }
+}
+
+.hero_content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .hero_content {
+    bottom: 150px;
+  }
 }
 
 .hero_copy {
