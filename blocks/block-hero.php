@@ -16,11 +16,13 @@
             </div>
           </div>
         </div>
+        <?php if( $slide["hero_link"] ) { ?>
         <div class="row">
           <div class="col_xl_8 push_xl_1">
             <a href="<?=$slide["hero_link"]["url"]?>" class="hero_cta"><?=$slide["hero_link"]["title"] ? $slide["hero_link"]["title"] : "Read More"?></a>
           </div>
         </div>
+        <?php } ?>
       </div>
     </div>
     <?php
