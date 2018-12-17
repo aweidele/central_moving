@@ -8,7 +8,7 @@
   include("blocks/block-hero.php");
 ?>
 
-<main class="main">
+<main class="main" id="main">
 <?php cm_blocks($fields["blocks"]); ?>
 </main>
 <?php get_footer(); ?>

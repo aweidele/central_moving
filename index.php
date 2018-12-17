@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <main>
+    <main id="main">
 
       <div class="row">
         <div class="col push_2">Column</div>

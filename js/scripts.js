@@ -3475,6 +3475,15 @@
     });
   }
 
+  $( $(".hero_scroll a")).on("click", function(e) {
+    e.preventDefault();
+    var target = $( this ).attr("href");
+    var offset = $( target ).offset().top - $(".page_wrapper > .header").height();
+    $('html, body').animate({
+      scrollTop: offset
+    }, 750);
+  });
+
   $(window).load(function() {
     // Check for hash in url
     var hash = window.location.hash;
