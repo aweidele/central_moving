@@ -1030,39 +1030,6 @@ button {
   width: auto;
 }
 
-.hero_scroll {
-  width: 100%;
-  position: absolute;
-  bottom: 50px;
-  z-index: 2;
-  display: block;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-}
-
-.hero_scroll a {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: .05em;
-}
-
-.hero_scroll svg {
-  width: 100px;
-  fill: currentColor;
-  margin-top: 10px;
-}
-
 .hero_item {
   position: relative;
 }
@@ -1118,6 +1085,39 @@ button {
   left: 0;
   bottom: 150px;
   margin: 0;
+}
+
+.hero_scroll {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  z-index: 2;
+  display: block;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero_scroll a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .05em;
+}
+
+.hero_scroll svg {
+  width: 100px;
+  fill: currentColor;
+  margin-top: 10px;
 }
 
 .hero_copy {
