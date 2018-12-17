@@ -1012,59 +1012,55 @@ button {
   padding-top: 70px;
 }
 
-@media screen and (min-width: 769px) {
-  .hero_carousel {
-    height: 100vh;
-  }
-  .hero_carousel .hero,
-  .hero_carousel .hero .owl-stage-outer,
-  .hero_carousel .hero .owl-stage,
-  .hero_carousel .hero .owl-item,
-  .hero_carousel .hero .hero_item,
-  .hero_carousel .hero .hero_image {
-    height: 100%;
-  }
-  .hero_carousel .owl-carousel .owl-item img {
-    height: 100%;
-    width: auto;
-  }
+.hero_carousel {
+  height: 100vh;
+}
+
+.hero_carousel .hero,
+.hero_carousel .hero .owl-stage-outer,
+.hero_carousel .hero .owl-stage,
+.hero_carousel .hero .owl-item,
+.hero_carousel .hero .hero_item,
+.hero_carousel .hero .hero_image {
+  height: 100%;
+}
+
+.hero_carousel .owl-carousel .owl-item img {
+  height: 100%;
+  width: auto;
 }
 
 .hero_scroll {
-  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  z-index: 2;
+  display: block;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 769px) {
-  .hero_scroll {
-    width: 100%;
-    position: absolute;
-    bottom: 50px;
-    z-index: 2;
-    display: block;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-  }
-  .hero_scroll a {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .05em;
-  }
-  .hero_scroll svg {
-    width: 100px;
-    fill: currentColor;
-    margin-top: 10px;
-  }
+.hero_scroll a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .05em;
+}
+
+.hero_scroll svg {
+  width: 100px;
+  fill: currentColor;
+  margin-top: 10px;
 }
 
 .hero_item {
@@ -1118,16 +1114,10 @@ button {
 
 .hero_content {
   width: 100%;
-  margin-top: 40px;
-}
-
-@media screen and (min-width: 769px) {
-  .hero_content {
-    position: absolute;
-    left: 0;
-    bottom: 150px;
-    margin: 0;
-  }
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  margin: 0;
 }
 
 .hero_copy {
