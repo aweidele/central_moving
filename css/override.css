@@ -5,3 +5,15 @@
     line-height: 1.3em;
     margin-bottom: 0.5em;
 }
+
+.focal-center img{
+	position: absolute;
+}
+.focal-center {
+	overflow: hidden;
+}
+
+.stat_box_content .stat_figure {
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+}
