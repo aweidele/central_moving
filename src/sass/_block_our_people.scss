@@ -28,18 +28,22 @@
 }
 
 .our_people_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: $gutter * 2 $gutter;
+  display: flex;
+  flex-wrap: wrap;
+  // grid-gap: $gutter * 2 $gutter;
 
-  @media #{$minSM} {
-    grid-template-columns: 1fr 1fr 1fr;
+  > article {
+    width: 50%;
+    padding: 0 0 0 $gutter * 2;
+
+    @media #{$minSM} {
+      width: 33.3%;
+    }
+
+    @media #{$minLG} {
+      width: 25%;
+    }
   }
-
-  @media #{$minLG} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
 
 
   .our_people_thumb {
