@@ -34,7 +34,7 @@
 
   > article {
     width: 50%;
-    padding: 0 0 0 $gutter * 2;
+    padding: 0 0 $gutter * 2;
 
     @media #{$minSM} {
       width: 33.3%;

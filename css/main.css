@@ -1799,7 +1799,7 @@ button {
 
 .our_people_grid > article {
   width: 50%;
-  padding: 0 0 0 40px;
+  padding: 0 0 40px;
 }
 
 @media screen and (min-width: 426px) {
