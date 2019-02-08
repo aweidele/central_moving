@@ -37,17 +37,17 @@
 			var windowWidth = $window.width();
 			var windowHeight = $window.height();
 			var windowRatio = windowWidth / windowHeight;
-			
+
 			images.each(function(){
 				var $this = jQuery(this);
 				var width = parseFloat($this.data("width"));
 				var height = parseFloat($this.data("height"));
 				var ratio = width / height;
-				
+
 				if( windowRatio > ratio ) {
 					var newHeight = (windowWidth / ratio);
 					var newTop = (newHeight - windowHeight) / 2;
-					
+
 					if( newTop > 0 ) {
 						newTop *= -1;
 					}
@@ -55,7 +55,7 @@
 				} else {
 					var newWidth = (windowHeight * ratio);
 					var newLeft = (newWidth - windowWidth) / 2;
-					
+
 					if( newLeft > 0 ) {
 						newLeft *= -1;
 					}
