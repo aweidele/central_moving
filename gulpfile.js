@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var pxtorem = require('gulp-pxtorem');
+var gcmq = require('gulp-group-css-media-queries');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
@@ -33,6 +34,7 @@ gulp.task('sass', function(){
     //.pipe(sourcemaps.write())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(pxtorem())
+    .pipe(gcmq())
     .pipe(gulp.dest('css/'))
 });
 
