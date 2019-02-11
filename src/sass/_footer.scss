@@ -58,9 +58,8 @@
 
 .footer_nav {
   ul {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: $gutter / 2 $gutter;
+    display: flex;
+    flex-wrap: wrap;
 
     font-size: 16px;
     font-weight: $light;
@@ -70,5 +69,7 @@
 
   li {
     line-height: 1.2em;
+    width: 50%;
+    padding-bottom: $gutter;
   }
 }

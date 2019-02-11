@@ -605,11 +605,11 @@ button {
 }
 
 .footer_nav ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
-  grid-gap: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: 1rem;
   font-weight: 300;
   list-style: none;
@@ -618,6 +618,8 @@ button {
 
 .footer_nav li {
   line-height: 1.2em;
+  width: 50%;
+  padding-bottom: 20px;
 }
 
 .schema_name {
