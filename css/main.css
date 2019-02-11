@@ -1591,6 +1591,8 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   border: 0 dt;
   border-width: 40px;
   border-padding-bottom: 10px;
