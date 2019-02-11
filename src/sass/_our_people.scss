@@ -140,8 +140,16 @@
 }
 
 .our_people_contact {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10px;
-  border: 0;
+  display: inline-flex;
+  border: 0
+
+  dt {
+    width: 40px;
+    padding-bottom: 10px;
+  }
+
+  dd {
+    width: calc(100% - 40px);
+    padding-left: 20px;
+  }
 }

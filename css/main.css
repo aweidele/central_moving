@@ -1588,12 +1588,17 @@ button {
 }
 
 .our_people_contact {
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10px;
-  border: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 0 dt;
+  border-width: 40px;
+  border-padding-bottom: 10px;
+}
+
+.our_people_contact dd {
+  width: calc(100% - 40px);
+  padding-left: 20px;
 }
 
 .services_main {
