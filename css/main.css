@@ -1593,9 +1593,12 @@ button {
   display: inline-flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border: 0 dt;
-  border-width: 40px;
-  border-padding-bottom: 10px;
+  border: 0;
+}
+
+.our_people_contact dt {
+  width: 40px;
+  padding-bottom: 10px;
 }
 
 .our_people_contact dd {
