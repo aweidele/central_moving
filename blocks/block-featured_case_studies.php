@@ -6,18 +6,22 @@
           <h2><?=$block["title"]?></h2>
         </header>
         <?php
-          foreach( $block["featured_case_studies_right"] as $case_study ) {
-            cs_block($case_study);
-          }
+		  if( isset($block["featured_case_studies_right"]) ) {
+			  foreach( $block["featured_case_studies_right"] as $case_study ) {
+				cs_block($case_study);
+			  }
+		  }
         ?>
         <a href="<?=$block["link"]["url"]?>" class="featured_case_studies_link right" aria-hidden="true"><?=$block["link"]["title"] ? $block["link"]["title"] : "Case Studies" ?></a>
       </div>
     </div>
     <div class="col_11 col_lg_5 col_xl_4 push_xl_1">
       <?php
-        foreach( $block["featured_case_studies_left"] as $case_study ) {
-          cs_block($case_study);
-        }
+		if( isset($block["featured_case_studies_left"]) ) {
+			foreach( $block["featured_case_studies_left"] as $case_study ) {
+			  cs_block($case_study);
+			}
+		}
       ?>
       <a href="<?=$block["link"]["url"]?>" class="featured_case_studies_link left"><?=$block["link"]["title"] ? $block["link"]["title"] : "Case Studies" ?></a>
     </div>
