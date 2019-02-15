@@ -35,7 +35,7 @@
 ?>
   <div class="hero_wrapper case_study_hero">
     <figure>
-      <img src="<?=$fields["hero_image"]["sizes"]["case_study_hero"]?>" alt="<?=$fields["hero_image"]["alt"] ? $fields["hero_image"]["alt"] : $post->post_title ?>">
+      <img src="<?=$fields["hero_image"]["url"]?>" alt="<?=$fields["hero_image"]["alt"] ? $fields["hero_image"]["alt"] : $post->post_title ?>">
     </figure>
   </div>
   <main class="main case_study_main">
@@ -69,6 +69,7 @@
           </aside>
           <?php } ?>
           <nav class="case_study_nav">
+            <a href="/case-studies" class="back">Back to Case Studies</a>
             <a href="<?=$prevCS?>">Prev</a>
             <a href="<?=$nextCS?>">Next</a>
           </nav>
